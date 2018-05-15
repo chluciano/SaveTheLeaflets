@@ -25,12 +25,16 @@ body {
 .header-container{
 	height: 100%;
 	width: 33%;
-	
 }
 
 #title{
 
 	text-align: center;
+}
+
+.credits{
+	text-align: right;
+	font-size: 10pt;
 }
 
 #home-icon, #question-icon{
@@ -53,7 +57,7 @@ body {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	height: 20%;
+	height: 15%;
 }
 
 .tab-button {
