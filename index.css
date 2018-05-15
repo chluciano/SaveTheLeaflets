@@ -21,6 +21,7 @@ body {
 	flex-direction: row;
 	height: 15%;
 	background-color: #00B295;
+	width: 100%;
 }
 .header-container{
 	height: 100%;
@@ -48,12 +49,8 @@ body {
 }
 
 .tab-bar {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	height: 20%;
+
+
 }
 
 .tab-button {
