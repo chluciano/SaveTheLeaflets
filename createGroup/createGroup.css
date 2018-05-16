@@ -2,7 +2,7 @@ html{
 	margin-left: 40%;
 }
 body {
-	background-image: url("images/iphoneOL.jpg");
+	background-image: url("../images/iphoneOL.jpg");
 	background-repeat: no-repeat;
 	font-family: Avenir, sans-serif;
 }
@@ -22,19 +22,19 @@ body {
 	height: 15%;
 	background-color: #00B295;
 }
-.header-container{
-	height: 100%;
-	width: 33%;
-}
-
-#title{
-
-	text-align: center;
-}
-
-.credits{
-	text-align: right;
+.header-row-top{
+	height: 33%;
+	width: 50%;
 	font-size: 10pt;
+	display: flex;
+	flex-direction: row;
+}
+
+.header-row-bottom{
+	height: 67%;
+	width: 100%;
+	font-size: 20pt;
+	text-align: center;
 }
 
 #home-icon, #question-icon{
@@ -76,6 +76,7 @@ body {
 	height: 100%;
 	width: 100%;
 	z-index: -1;
+	font-size: 15pt;
 }
 
 .link{
