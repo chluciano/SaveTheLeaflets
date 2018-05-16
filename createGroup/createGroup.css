@@ -1,0 +1,120 @@
+html{
+	margin-left: 40%;
+}
+body {
+	background-image: url("../images/iphoneOL.jpg");
+	background-repeat: no-repeat;
+	font-family: Avenir, sans-serif;
+}
+
+#screen {
+	height: 530px;
+	width: 300px;
+	margin: 105px 30px;
+}
+
+.header{
+	height: 15%;
+	background-color: #00B295;
+}
+.header-row-top{
+	height: 33%;
+	width: 50%;
+	font-size: 15pt;
+	float: left;
+}
+
+.header-row-bottom{ /* keeps title separate from top row containg home, help and credits */
+	height: 67%;
+	width: 100%;
+	font-size: 20pt;
+	text-align: center;
+	float: left;
+}
+
+#home-icon, #question-icon{
+	height: 20px;
+	width: 20px;
+	padding: 2%;
+	border: 2px solid black;
+	border-radius: 15px;
+	background-color: white;
+}
+
+#home-icon{
+	margin-left: 2%;
+	margin-top: 2%;
+}
+
+#credits{ /* top right hand corner shows amount of credits */
+	text-align: right;
+	padding-right: 5px;
+}
+
+.form-container{
+	height: 60%;
+	width: 100%;
+	padding: 8px;
+}
+
+/* tried to resize the bootstrap buttons using this but did not work
+.form-group.form-section{
+	height: 15%;
+	width: 100%;
+	margin: 0px;
+	float: left;
+}
+
+.form-row.form-section{
+	height: 15%;
+	width: 100%;
+	margin: 0px;
+	float: left;
+}
+
+.form-section{
+	height: 15%;
+	width: 100%;
+	margin: 0px;
+	float: left;
+}*/
+
+.button-container{ /* for confirmation and cancel buttons */
+	height: 15%;
+	width: 100%;
+}
+
+.tab-bar {
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	height: 10%;
+}
+
+.tab-button {
+	float: left;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border: 1px solid black;
+	height: 100%;
+	width: 25%;
+	position: relative;
+}
+
+.button-text{
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	font-size: 10pt;
+}
+
+.link{
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left: 0;
+	z-index: 1;
+}
+
