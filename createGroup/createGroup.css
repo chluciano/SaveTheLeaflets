@@ -118,3 +118,6 @@ body {
 	z-index: 1;
 }
 
+.form-control-sm{
+	width: 100%;
+}
