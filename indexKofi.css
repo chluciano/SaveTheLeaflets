@@ -10,27 +10,30 @@ body {
 #screen {
 	height: 530px;
 	width: 300px;
-	margin: 105px 23px;
+	margin: 105px 30px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
 
 .header{
-	display: flex;
-	flex-direction: row;
 	height: 15%;
 	background-color: #00B295;
 }
-.header-container{
-	height: 100%;
-	width: 33%;
-	
+.header-row-top{
+	height:20px;
+	width:285px;
+	/*width: 50%;*/
+	font-size: 15pt;
+	float: left;
 }
 
-#title{
-
+.header-row-bottom{ /* keeps title separate from top row containg home, help and credits */
+	height: 67%;
+	width: 100%;
+	font-size: 18pt;
 	text-align: center;
+	float: left;
 }
 
 #home-icon, #question-icon{
@@ -47,32 +50,73 @@ body {
 	margin-top: 2%;
 }
 
+/* top right hand corner shows amount of credits*/
+
+#credits{ 
+	height: 20px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+.left {
+	width:80px;
+	float:left;
+}
+.right {
+	width:80px;
+	float:right;
+}
+
+.left-agent {
+	width:20px;
+	float:left;
+}
+.right-agent {
+	width:140px;
+	float:right;
+}
+
+.form-container{
+	height: 60%;
+	width: 100%;
+	padding: 8px;
+}
+
 .tab-bar {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	height: 20%;
+	height: 15%;
+}
+
+.tab-bar {
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	height: 10%;
 }
 
 .tab-button {
-	display: flex;
-	flex-direction: row;
+	float: left;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	border: 1px solid black;
 	height: 100%;
-	width: 33%;
+	width: 25%;
 	position: relative;
 }
+
 
 .button-text{
 	height: 100%;
 	width: 100%;
 	z-index: -1;
+	font-size: 10pt;
 }
+
 
 .link{
 	position: absolute;
@@ -83,3 +127,38 @@ body {
 	z-index: 1;
 }
 
+.free-agent{
+	padding-top: 6px
+}
+
+.free-agent-header{
+	padding-top: 6px;
+	padding-left: 10px;
+	background-color: rgba(239, 241, 243, .6);
+	width: 300px;
+}
+
+
+.share-confirmation{
+	padding-top: 6px;
+	padding-left: 10px;
+	width: 300px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.group-listing{
+	padding-left: 15px;
+	width: 300px;
+	background-color: rgba(239, 241, 243, .6);
+	justify-content: left;
+	align-items: left;
+	text-align: left;
+}
+
+.group-members{
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}

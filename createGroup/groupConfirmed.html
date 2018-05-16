@@ -1,47 +1,71 @@
 <html>
 <header>
    <title>groupConfirmed</title>
-<<<<<<< HEAD
-   <link rel="stylesheet" type="text/css" href="../index.css"/>
-=======
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
    <link rel="stylesheet" type="text/css" href="../indexKofi.css"/>
->>>>>>> 04223d6a673aa30ee4dcd9042377add609b22307
+      <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 </header>
    <body>
       <div id="screen"> 
          <div class="header">
-            <div class="header-container">
-               <img src="https://image.flaticon.com/icons/svg/20/20176.svg" id="home-icon">
-               <img src="https://image.flaticon.com/icons/svg/20/20176.svg" id="home-icon">
+            <div class="header-row-top">
+               <div class="left">
+               <a href="../index.html"><img src="https://image.flaticon.com/icons/svg/20/20176.svg" id="home-icon"></a>
                <img src="https://image.flaticon.com/icons/svg/36/36601.svg" id="question-icon">
+               </div>
+               <div class="right">
+                  <p id="credits"> 420C </p>
+               </div>
             </div>
-            <div class="header-container">
-               <h1 id="title"> Group Confirmed </h1>
-            </div>
-            <div class="header-container">
+            <!--div class="header-row-top">
+               
+            </div-->
+            <div class="header-row-bottom">
+               <p><em>Group Confirmed</em></p>
             </div>
          </div>
          <div class="share-confirmation">
-            <h1 class="heading-confirm"> Shared: </h1>
-            <h1 class="course-name-confirm"> History 250-1: Course Packet</h1>
+            <div>
+            <label class="heading-confirm"> Shared: </label>
+            </div>
+            <div>
+            <label class="course-name-confirm"> History 250-1: Course Packet</label>
+            </div>
          </div>
          <div class="group-listing">
-            <p>With:</p>
-            <p id="group-members">1. Alex Anders</p>
+            <p class="group-members">With:</p>
+            <p class="group-members">1. Alex Anders</p>
          </div>
-         <div class="ok-button">
-            <a href="../index.html"><span class="link"></span></a>
-            <h4 class="return-text"> Ok </h4>
+ <!--
+*
+*        
+*confirmation or cancel
+*
+* 
+-->
+         <div class="button-container"> 
+            <a href="findGroup.html" style="margin: 10px 20px" class="btn btn-success btn-lg" role="button"> Ok
+            </a>
          </div>
+<!--
+*
+*        
+*standard bottom tabs
+*
+* 
+-->              
          <div class="tab-bar">
             <div class="tab-button">
-               <a href="find.html"><span class="link"></span></a>
-               <h4 class="button-text"> Find a </br>Textbook </h4>
+               <a href="../findTextbooks.html"><span class="link"></span></a>
+               <h4 class="button-text"> Find Course </br>Materials </h4>
             </div>
-            
             <div class="tab-button">
-               <a href="library.html"><span class="link"></span></a>
+               <a href="searchGroups.html"><span class="link"></span></a>
+               <h4 class="button-text"> Sharing </br> Groups </h4>
+            </div>
+            <div class="tab-button">
+               <a href="../library.html"><span class="link"></span></a>
                <h4 class="button-text"> Library </h4>
             </div>
             <div class="tab-button">
