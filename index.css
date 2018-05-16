@@ -28,10 +28,9 @@ a{
 	height: 25%;
 }
 .header-container{
-<<<<<<< HEAD
-<<<<<<< HEAD
 	width: 100%;
 	background-color: #00B295;
+<<<<<<< HEAD
 	
 =======
 	width: 33%;
@@ -41,6 +40,8 @@ a{
 	background-color: #00B295;
 
 >>>>>>> 183a4db9b5d5bd4d2823a2dd3eb52ebcd34c0852
+=======
+>>>>>>> e379ab1a52b88d10e092718d845fb63cea325912
 }
 
 #title{
@@ -113,7 +114,7 @@ a{
 .findGroupEntries{
 	overflow: hidden;
 	overflow-y: scroll;
-	height: 74%;
+	height: 60%;
 }
 
 .findGroupEntry{
