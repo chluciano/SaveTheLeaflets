@@ -1,3 +1,4 @@
+
 html{
 	margin-left: 40%;
 }
@@ -6,11 +7,14 @@ body {
 	background-repeat: no-repeat;
 	font-family: Avenir, sans-serif;
 }
+a{
+	text-decoration: none;
+}
 
 #screen {
 	height: 530px;
 	width: 300px;
-	margin: 105px 23px;
+	margin: 105px 30px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -18,14 +22,15 @@ body {
 
 .header{
 	display: flex;
-	flex-direction: row;
-	height: 15%;
-	background-color: #00B295;
-	width: 100%;
+	flex-direction: column;
+	
+	
 }
 .header-container{
 	height: 100%;
-	width: 33%;
+	width: 100%;
+	background-color: #00B295;
+	height: 15%;
 	
 }
 
@@ -35,22 +40,26 @@ body {
 }
 
 #home-icon, #question-icon{
-	height: 20px;
-	width: 20px;
+	height: 25px;
+	width: 25px;
 	padding: 2%;
 	border: 2px solid black;
-	border-radius: 15px;
+	border-radius: 12.5px;
 	background-color: white;
 }
 
 #home-icon{
 	margin-left: 2%;
-	margin-top: 2%;
+
 }
 
 .tab-bar {
-
-
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 20%;
 }
 
 .tab-button {
@@ -61,7 +70,7 @@ body {
 	text-align: center;
 	border: 1px solid black;
 	height: 100%;
-	width: 25%;
+	width: 33%;
 	position: relative;
 }
 
