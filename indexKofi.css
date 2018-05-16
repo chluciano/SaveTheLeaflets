@@ -17,20 +17,23 @@ body {
 }
 
 .header{
-	display: flex;
-	flex-direction: row;
 	height: 15%;
 	background-color: #00B295;
 }
-.header-container{
-	height: 100%;
-	width: 33%;
-	
+.header-row-top{
+	height:20px;
+	width:285px;
+	/*width: 50%;*/
+	font-size: 15pt;
+	float: left;
 }
 
-#title{
-
+.header-row-bottom{ /* keeps title separate from top row containg home, help and credits */
+	height: 67%;
+	width: 100%;
+	font-size: 18pt;
 	text-align: center;
+	float: left;
 }
 
 #home-icon, #question-icon{
@@ -45,6 +48,29 @@ body {
 #home-icon{
 	margin-left: 2%;
 	margin-top: 2%;
+}
+
+/* top right hand corner shows amount of credits*/
+
+#credits{ 
+	height: 20px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+.left {
+	width:80px;
+	float:left;
+}
+.right {
+	width:80px;
+	float:right;
+}
+
+.form-container{
+	height: 60%;
+	width: 100%;
+	padding: 8px;
 }
 
 .tab-bar {
@@ -72,6 +98,7 @@ body {
 	height: 100%;
 	width: 100%;
 	z-index: -1;
+	font-size: 10pt;
 }
 
 .link{
@@ -83,3 +110,7 @@ body {
 	z-index: 1;
 }
 
+.free-agent{
+	padding-top: 6px
+
+}
