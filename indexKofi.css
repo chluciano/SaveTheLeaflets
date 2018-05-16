@@ -10,7 +10,7 @@ body {
 #screen {
 	height: 530px;
 	width: 300px;
-	margin: 105px 23px;
+	margin: 105px 30px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -67,6 +67,15 @@ body {
 	float:right;
 }
 
+.left-agent {
+	width:20px;
+	float:left;
+}
+.right-agent {
+	width:140px;
+	float:right;
+}
+
 .form-container{
 	height: 60%;
 	width: 100%;
@@ -79,20 +88,27 @@ body {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	height: 20%;
+	height: 15%;
+}
+
+.tab-bar {
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	height: 10%;
 }
 
 .tab-button {
-	display: flex;
-	flex-direction: row;
+	float: left;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	border: 1px solid black;
 	height: 100%;
-	width: 33%;
+	width: 25%;
 	position: relative;
 }
+
 
 .button-text{
 	height: 100%;
@@ -100,6 +116,7 @@ body {
 	z-index: -1;
 	font-size: 10pt;
 }
+
 
 .link{
 	position: absolute;
@@ -112,5 +129,36 @@ body {
 
 .free-agent{
 	padding-top: 6px
+}
 
+.free-agent-header{
+	padding-top: 6px;
+	padding-left: 10px;
+	background-color: rgba(239, 241, 243, .6);
+	width: 300px;
+}
+
+
+.share-confirmation{
+	padding-top: 6px;
+	padding-left: 10px;
+	width: 300px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.group-listing{
+	padding-left: 15px;
+	width: 300px;
+	background-color: rgba(239, 241, 243, .6);
+	justify-content: left;
+	align-items: left;
+	text-align: left;
+}
+
+.group-members{
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }

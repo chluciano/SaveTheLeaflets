@@ -2,6 +2,10 @@
 <header>
    <title>freeAgents</title>
    <link rel="stylesheet" type="text/css" href="../indexKofi.css"/>
+      <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</header>
    <body>
       <div id="screen"> 
 
@@ -42,39 +46,62 @@
          <div class="free-agent-list">
             <div class="form-group form-check">
                <ol>
-                  <li class="free-agent">                    
-                     <label class="fa-name-location">Alex Anders | South Campus | </label>
-                     <label class="fa-want-own"> Want to Own? M </label>
-                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                     <div class="not-using">
-                        <label>Not Using: </label>
-                        <label class="day" id="mon">M</label>
-                        <label class="day" id="tues">Tu</label>
-                        <label class="day" id="wed">W</label>
-                        <label class="day" id="thur">Th</label>
-                        <label class="day" id="fri">F</label>
-                        <label class="day" id="sat">Sa</label>
-                        <label class="day" id="sun">Su</label>
+                  <li class="free-agent">
+                     <div class="left-agent">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                     </div>
+                     <div class="right-agent">                    
+                        <label class="fa-name-location">Alex Anders | South Campus | </label>
+                        <label class="fa-want-own"> Want to Own? M </label> 
+                        <div class="not-using">
+                           <label>Not Using: </label>
+                           <!--label class="day" id="mon">M</label-->
+                           <label class="day" id="tues">Tu</label>
+                           <label class="day" id="wed">W</label>
+                           <!--label class="day" id="thur">Th</label-->
+                           <label class="day" id="fri">F</label>
+                           <label class="day" id="sat">Sa</label>
+                           <!--label class="day" id="sun">Su</label-->
+                        </div>
                      </div>
                   </li>
                   <li class="free-agent">                    
-                     <label class="fa-name-location">Stephen Steve | Off Campus North | </label>
-                     <label class="fa-want-own"> Want to Own? N </label>
+                     <label class="fa-name-location">Xi Jin Pong | North Campus | </label>
+                     <label class="fa-want-own"> Want to Own? Y </label>
                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
                      <div class="not-using">
                         <label>Not Using: </label>
-                        <label class="day" id="mon">M</label>
+                        <!--label class="day" id="mon">M</label-->
                         <label class="day" id="tues">Tu</label>
                         <label class="day" id="wed">W</label>
                         <label class="day" id="thur">Th</label>
-                        <label class="day" id="fri">F</label>
-                        <label class="day" id="sat">Sa</label>
+                        <!--label class="day" id="fri">F</label-->
+                        <!--label class="day" id="sat">Sa</label-->
                         <label class="day" id="sun">Su</label>
                      </div>
                   </li>
                </ol>
             </div>
-         </div>        
+         </div>  
+ <!--
+*
+*        
+*confirmation or cancel
+*
+* 
+-->
+         <div class="button-container"> 
+            <a href="groupConfirmed.html" style="margin: 10px 20px" class="btn btn-success btn-lg" role="button">
+               Create New Group
+            </a>
+         </div>
+<!--
+*
+*        
+*standard bottom tabs
+*
+* 
+-->              
          <div class="tab-bar">
             <div class="tab-button">
                <a href="../findTextbooks.html"><span class="link"></span></a>
@@ -95,6 +122,9 @@
          </div>
 
       </div>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
    </body>
 </html>
 <!-- 
