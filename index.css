@@ -20,18 +20,17 @@ a{
 	justify-content: space-between;
 }
 
+
+
 .header{
 	display: flex;
 	flex-direction: column;
-	
-	
+	height: 25%;
 }
 .header-container{
-	height: 100%;
 <<<<<<< HEAD
 	width: 100%;
 	background-color: #00B295;
-	height: 15%;
 	
 =======
 	width: 33%;
@@ -106,13 +105,14 @@ a{
 }
 
 .findGroupEntries{
-	margin-left: 15.75px;
+	overflow: hidden;
+	overflow-y: scroll;
+	height: 74%;
 }
 
 .findGroupEntry{
 	background-color: rgba(239, 241, 243, .6);
-	width: 300px;
-	margin: 5px;
+	margin-bottom: 5px;
 }
 
 
