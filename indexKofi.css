@@ -28,6 +28,7 @@ body {
 	/*width: 50%;*/
 	font-size: 15pt;
 	float: left;
+		font-family: 'Josefin Sans', sans-serif;
 }
 
 .header-row-bottom{ /* keeps title separate from top row containg home, help and credits */
@@ -67,6 +68,7 @@ body {
 .right {
 	width:80px;
 	float:right;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 .form-container{
@@ -222,3 +224,8 @@ body {
 .button-container{
 	font-family: 'Josefin Sans', sans-serif;
 }
+
+.share-confirmation{
+	font-family: 'Josefin Sans', sans-serif;
+}
+
