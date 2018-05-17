@@ -5,7 +5,6 @@ body {
 	/*background-image: url("../images/iphoneOL.jpg");*/
 	background-image: url("../images/iphoneOL_shelf1.jpg");
 	background-repeat: no-repeat;
-	font-family: 'Josefin Sans', sans-serif;
 }
 
 #screen {
@@ -17,6 +16,8 @@ body {
 .header{
 	height: 15%;
 	background-image: url("../images/WoodLight.png");
+	font-family: 'Josefin Sans', sans-serif;
+	font-style: normal;
 }
 .header-row-top{
 	height: 33%;
@@ -50,12 +51,14 @@ body {
 #credits{ /* top right hand corner shows amount of credits */
 	text-align: right;
 	padding-right: 5px;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 .form-container{
 	height: 60%;
 	width: 100%;
 	padding: 8px;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 /* tried to resize the bootstrap buttons using this but did not work
@@ -83,6 +86,7 @@ body {
 .button-container{ /* for confirmation and cancel buttons */
 	height: 15%;
 	width: 100%;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 .tab-bar {
@@ -108,6 +112,7 @@ body {
 	width: 100%;
 	z-index: -1;
 	font-size: 10pt;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 .link{
