@@ -3,7 +3,7 @@ html{
 	margin-left: 40%;
 }
 body {
-	background-image: url("images/iphoneOL.jpg");
+	background-image: url("images/iphoneOL_shelf1.jpg");
 	background-repeat: no-repeat;
 	font-family: Avenir, sans-serif;
 }
@@ -20,28 +20,21 @@ a{
 	justify-content: space-between;
 }
 
-
-
 .header{
 	display: flex;
 	flex-direction: column;
 	height: 25%;
 }
+
+.header-2{
+	flex-direction: column;
+	height: 25%;
+	background-image: url("images/WoodLight.png");	
+}
+
 .header-container{
 	width: 100%;
-	background-color: #00B295;
-<<<<<<< HEAD
-	
-=======
-	width: 33%;
->>>>>>> 04223d6a673aa30ee4dcd9042377add609b22307
-=======
-	width: 100%;
-	background-color: #00B295;
-
->>>>>>> 183a4db9b5d5bd4d2823a2dd3eb52ebcd34c0852
-=======
->>>>>>> e379ab1a52b88d10e092718d845fb63cea325912
+	background-image: url("images/WoodLight.png");
 }
 
 #title{
@@ -118,7 +111,7 @@ a{
 }
 
 .findGroupEntry{
-	background-color: rgba(239, 241, 243, .6);
+	/*background-color: rgba(239, 241, 243, .6);*/
 	margin-bottom: 5px;
 }
 
