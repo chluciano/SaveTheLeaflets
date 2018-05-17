@@ -27,12 +27,6 @@ a{
 	font-family: 'Josefin Sans', sans-serif;
 }
 
-.header-2{
-	flex-direction: column;
-	height: 25%;
-	background-image: url("images/WoodLight.png");	
-	font-family: 'Josefin Sans', sans-serif;
-}
 
 .header-container{
 	width: 100%;
@@ -111,6 +105,7 @@ a{
 	overflow: hidden;
 	overflow-y: scroll;
 	height: 60%;
+		font-family: 'Josefin Sans', sans-serif;
 }
 
 .findGroupEntry{

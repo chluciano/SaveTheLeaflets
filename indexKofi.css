@@ -19,6 +19,7 @@ body {
 .header{
 	height: 15%;
 	background-color: #00B295;
+	font-family: 'Josefin Sans', sans-serif;
 	background-image: url("images/WoodLight.png");
 }
 .header-row-top{
@@ -104,6 +105,7 @@ body {
 
 .button-text{
 	height: 100%;
+	font-family: 'Josefin Sans', sans-serif;
 	width: 100%;
 	z-index: -1;
 	font-size: 10pt;
@@ -127,6 +129,7 @@ body {
 	text-align: left;
 	overflow: hidden;
 	overflow-y: scroll;
+	font-family: 'Josefin Sans', sans-serif;
 	height: 45%;
 }
 
@@ -160,6 +163,7 @@ body {
 .right-agent {
 	width:250px;
 	float:left;
+	font-family: 'Josefin Sans', sans-serif;
 	background-color: rgba(99, 164, 255, .2);
 }
 
@@ -167,6 +171,7 @@ body {
 	padding-top: 6px;
 	padding-left: 5px;
 	background-color: rgba(99, 164, 255, .2);
+	font-family: 'Josefin Sans', sans-serif;
 	width: 300px;
 }
 
@@ -204,6 +209,7 @@ body {
 .fa-want-own{
 	padding-top: 0px;
 	margin-top: 0px;
+	font-family: 'Josefin Sans', sans-serif;
 	margin-bottom: 0px;
 }
 
@@ -211,4 +217,8 @@ body {
 	padding-top: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
+}
+
+.button-container{
+	font-family: 'Josefin Sans', sans-serif;
 }
