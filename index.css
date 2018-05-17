@@ -1,6 +1,6 @@
-
 html{
 	margin-left: 40%;
+	cursor: default;
 }
 body {
 	background-image: url("images/iphoneOL.jpg");
@@ -9,6 +9,14 @@ body {
 }
 a{
 	text-decoration: none;
+	cursor: default;
+}
+button{
+	cursor: none;
+}
+
+.btn, .btn-secondary{
+	cursor: default;
 }
 
 #screen {
