@@ -115,4 +115,9 @@ a{
 	margin-bottom: 5px;
 }
 
+.logo{
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
 
