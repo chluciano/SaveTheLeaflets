@@ -2,7 +2,8 @@ html{
 	margin-left: 40%;
 }
 body {
-	background-image: url("../images/iphoneOL.jpg");
+	/*background-image: url("../images/iphoneOL.jpg");*/
+	background-image: url("../images/iphoneOL_shelf1.jpg");
 	background-repeat: no-repeat;
 	font-family: Avenir, sans-serif;
 }
@@ -15,7 +16,7 @@ body {
 
 .header{
 	height: 15%;
-	background-color: #00B295;
+	background-image: url("../images/WoodLight.png");
 }
 .header-row-top{
 	height: 33%;
