@@ -42,4 +42,13 @@ function checkBox(el) {
     }
 }
 
+function checkBoxFix(el) {
+    var clicked = el.getElementsByClassName("form-check-input")[0].checked;
+    if (clicked == true) {
+       el.getElementsByClassName("form-check-input")[0].checked = false;
+    } else {
+       el.getElementsByClassName("form-check-input")[0].checked = true;
+    }
+}
+
 init();
