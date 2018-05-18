@@ -23,8 +23,8 @@ function checkUpdate() {
         document.getElementById("createNewGroup").innerHTML = "Form New Group"
         document.getElementById("createNewGroup").setAttribute('href',"groupConfirmed.html")
     } else {
-        document.getElementById("createNewGroup").innerHTML = "Create New Group"
-        document.getElementById("createNewGroup").setAttribute('href',"createGroup.html")
+        document.getElementById("createNewGroup").innerHTML = "Join Group"
+        document.getElementById("createNewGroup").setAttribute('href',"joinConfirmed.html")
     }
 }
 
