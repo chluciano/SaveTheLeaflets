@@ -42,34 +42,34 @@
 
          <div class="free-agent-header">
             <label class="course-name-list"> History 250-1: Course Packet</label>
-            <label class="course-name-confirm"> Group Members: 4</label>
+            <label class="course-name-confirm"> Group Members: 2</label>
          </div>
          <div>
             <div class="form-group form-check">
                <ol class="free-agent-list">
                   <li class="free-agent-item" id="exampleCheck1">
-                     <div class="free-agent">
-                     <div class="left-agent">
-                        <input type="checkbox" class="form-check-input">
-                     </div>
-                     <div class="right-agent">                    
-                        <label class="fa-name-location">Alex Anders | South Campus | </label>
-                        <label class="fa-want-own"> Want to Own? M </label> 
-                        <div class="fa-not-using">
-                           <label>Not Using: </label>
-                           <!--label class="day" id="mon">M</label-->
-                           <label class="day" id="tues">Tu</label>
-                           <label class="day" id="wed">W</label>
-                           <!--label class="day" id="thur">Th</label-->
-                           <label class="day" id="fri">F</label>
-                           <label class="day" id="sat">Sa</label>
-                           <!--label class="day" id="sun">Su</label-->
+                     <div class="free-agent" onclick="checkBox(this)">
+                        <div class="left-agent">
+                           <input type="checkbox" class="form-check-input">
                         </div>
-                     </div>   
+                        <div class="right-agent">                    
+                           <label class="fa-name-location">Alex Anders | South Campus | </label>
+                           <label class="fa-want-own"> Want to Own? M </label> 
+                           <div class="fa-not-using">
+                              <label>Not Using: </label>
+                              <!--label class="day" id="mon">M</label-->
+                              <label class="day" id="tues">Tu</label>
+                              <label class="day" id="wed">W</label>
+                              <!--label class="day" id="thur">Th</label-->
+                              <label class="day" id="fri">F</label>
+                              <label class="day" id="sat">Sa</label>
+                              <!--label class="day" id="sun">Su</label-->
+                           </div>
+                        </div>   
                      </div>
                   </li>
                   <li class="free-agent-item" id="exampleCheck2">                    
-                     <div class="free-agent">
+                     <div class="free-agent" onclick="checkBox(this)">
                      <div class="left-agent">
                         <input type="checkbox" class="form-check-input" >
                      </div>
@@ -101,7 +101,7 @@
 -->
          <div class="button-container"> 
             <a href="groupConfirmed.html" id="createNewGroup" style="margin: 10px 20px" class="btn btn-success btn-lg" role="button">
-               Form New Group
+               Join Group
             </a>
          </div>
 <!--
