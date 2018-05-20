@@ -150,23 +150,33 @@ body {
 
 .free-agent{
 	padding-left: 2px;
-	width: 300px;
-	background-color: rgba(99, 164, 255, .2);
+	width: 280px;
+	background-color: rgba(191, 191, 191, .2);
 	justify-content: left;
-	align-items: left;
+
 	text-align: left;
 }
 
 .left-agent {
-	width:10px;
+	width:30px;
 	float:left;
+	border-radius: 5px;
 }
 
 .right-agent {
-	width:250px;
-	float:left;
+	width:270px;
+	float: right;
 	font-family: 'Josefin Sans', sans-serif;
 	background-color: rgba(99, 164, 255, .2);
+	/*background-color: rgba(191, 191, 191, .2);*/
+}
+
+.form-check-input {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	background: rgba(99, 164, 255, .2);
+
 }
 
 .free-agent-header{
