@@ -5,7 +5,7 @@ html{
 body {
 	background-image: url("images/HomeScreen.jpg");
 	background-repeat: no-repeat;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Josefin Sans', sans-serif, !important;
 }
 a{
 	text-decoration: none;
@@ -32,7 +32,7 @@ button{
 	display: flex;
 	flex-direction: column;
 	height: 25%;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Josefin Sans', sans-serif, !important;
 }
 
 
@@ -42,7 +42,7 @@ button{
 }
 
 #title{
-
+	font-family: 'Josefin Sans', sans-serif, !important;
 	text-align: center;
 }
 
