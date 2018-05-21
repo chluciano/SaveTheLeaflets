@@ -1,10 +1,4 @@
-html{
-	margin-left: 40%;
-}
 body {
-	/*background-image: url("images/iphoneOL_shelf1.jpg");*/
-	background-image: url("images/SharingGroup.jpg");
-	background-repeat: no-repeat;
 	font-family: Avenir, sans-serif;
 	color: white;
 }
@@ -59,16 +53,17 @@ body {
 
 #credits{ 
 	height: 20px;
-	text-align: right;
+	text-align: left;
 	padding-right: 5px;
 }
 
 .left {
-	width:80px;
+	width:130px;
 	float:left;
 }
 .right {
-	width:80px;
+	width:140px;
+	text-align: right;
 	float:right;
 	font-family: 'Josefin Sans', sans-serif;
 }
