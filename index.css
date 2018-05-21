@@ -26,7 +26,7 @@ button{
 	display: flex;
 	flex-direction: column;
 	height: 25%;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Josefin Sans', sans-serif, !important;
 }
 
 
@@ -36,7 +36,7 @@ button{
 }
 
 #title{
-
+	font-family: 'Josefin Sans', sans-serif, !important;
 	text-align: center;
 }
 
