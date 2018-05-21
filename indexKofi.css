@@ -2,9 +2,11 @@ html{
 	margin-left: 40%;
 }
 body {
-	background-image: url("images/iphoneOL_shelf1.jpg");
+	/*background-image: url("images/iphoneOL_shelf1.jpg");*/
+	background-image: url("images/SharingGroup.jpg");
 	background-repeat: no-repeat;
 	font-family: Avenir, sans-serif;
+	color: white;
 }
 
 #screen {
@@ -18,9 +20,9 @@ body {
 
 .header{
 	height: 15%;
-	background-color: #00B295;
+	/*background-color: #00B295;*/
 	font-family: 'Josefin Sans', sans-serif;
-	background-image: url("images/WoodLight.png");
+	/*background-image: url("images/WoodLight.png");*/
 }
 .header-row-top{
 	height:20px;
@@ -79,18 +81,9 @@ body {
 
 .tab-bar {
 	width: 100%;
-	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	height: 15%;
-}
-
-.tab-bar {
-	width: 100%;
-	justify-content: space-between;
-	align-items: center;
-	height: 10%;
+	height: 80px;
 }
 
 .tab-button {
@@ -98,7 +91,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	border: 1px solid black;
 	height: 100%;
 	width: 25%;
 	position: relative;
@@ -111,8 +103,13 @@ body {
 	width: 100%;
 	z-index: -1;
 	font-size: 10pt;
+	padding: 25px 2px 2px 2px;
 }
 
+.button-text.active{
+	padding: 35px 2px 2px 2px;
+	font-size: 12pt;
+}
 
 .link{
 	position: absolute;
