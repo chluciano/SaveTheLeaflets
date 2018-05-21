@@ -2,7 +2,8 @@ html{
 	margin-left: 40%;
 }
 body {
-	background-image: url("images/iphoneOL_shelf1.jpg");
+	/*background-image: url("images/iphoneOL_shelf1.jpg");*/
+	background-image: url("images/SharingGroup.jpg");
 	background-repeat: no-repeat;
 	font-family: Avenir, sans-serif;
 }
@@ -113,6 +114,10 @@ body {
 	font-size: 10pt;
 }
 
+.button-text.active{
+	padding: 40px 2px 2px 2px;
+	font-size: 12pt;
+}
 
 .link{
 	position: absolute;
