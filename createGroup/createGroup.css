@@ -1,0 +1,123 @@
+#screen {
+	height: 530px;
+	width: 300px;
+	margin: 105px 30px;
+}
+
+.header{
+	height: 15%;
+	font-family: 'Josefin Sans', sans-serif;
+	font-style: normal;
+}
+.header-row-top{
+	height: 33%;
+	width: 50%;
+	font-size: 15pt;
+	float: left;
+}
+
+.header-row-bottom{ /* keeps title separate from top row containg home, help and credits */
+	height: 67%;
+	width: 100%;
+	font-size: 20pt;
+	text-align: center;
+	float: left;
+}
+
+#home-icon, #question-icon{
+	height: 20px;
+	width: 20px;
+	padding: 2%;
+	border: 2px solid black;
+	border-radius: 15px;
+	background-color: white;
+}
+
+#home-icon{
+	margin-left: 2%;
+	margin-top: 2%;
+}
+
+#credits{ /* top right hand corner shows amount of credits */
+	text-align: right;
+	padding-right: 5px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.form-container{
+	height: 60%;
+	width: 100%;
+	padding: 8px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+/* tried to resize the bootstrap buttons using this but did not work
+.form-group.form-section{
+	height: 15%;
+	width: 100%;
+	margin: 0px;
+	float: left;
+}
+
+.form-row.form-section{
+	height: 15%;
+	width: 100%;
+	margin: 0px;
+	float: left;
+}
+
+.form-section{
+	height: 15%;
+	width: 100%;
+	margin: 0px;
+	float: left;
+}*/
+
+.button-container{ /* for confirmation and cancel buttons */
+	height: 15%;
+	width: 100%;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.tab-bar {
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	height: 10%;
+}
+
+.tab-button {
+	float: left;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	width: 25%;
+	position: relative;
+}
+
+.button-text{
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	font-size: 10pt;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.button-text.active{
+	padding: 40px 2px 2px 2px;
+	font-size: 12pt;
+}
+
+.link{
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left: 0;
+	z-index: 1;
+}
+
+.form-control-sm{
+	width: 100%;
+}

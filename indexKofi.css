@@ -224,6 +224,12 @@ body {
 
 .button-container{
 	font-family: 'Josefin Sans', sans-serif;
+	justify-content: center;
+}
+
+#center-button{
+	font-family: 'Josefin Sans', sans-serif;
+	
 }
 
 .share-confirmation{

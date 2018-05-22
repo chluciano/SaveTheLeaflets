@@ -25,9 +25,11 @@ function checkUpdate() {
         if (count > 0) {
             document.getElementById("createNewGroup").innerHTML = "Form New Group"
             document.getElementById("createNewGroup").setAttribute('href',"groupConfirmed.html")
+            document.getElementById("createNewGroup").setAttribute('style',"margin: 10px 60px")
         } else {
             document.getElementById("createNewGroup").innerHTML = "Join Group"
             document.getElementById("createNewGroup").setAttribute('href',"joinConfirmed.html")
+            document.getElementById("createNewGroup").setAttribute('style',"margin: 10px 95px")
         }
     }
     last_count = count
