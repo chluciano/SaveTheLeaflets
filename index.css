@@ -55,6 +55,17 @@ button{
 	justify-content: center;
 }
 
+.left { /* Kofi used this for columns I think */
+	width:10px;
+	float:left;
+}
+.right {
+	width:140px;
+	text-align: right;
+	float:right;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
 /*
 *
 *
@@ -63,6 +74,9 @@ button{
 *
 */
 /* Screen position, header banners */
+html{
+    margin-left: 40%;
+}
 
 #screen {
 	height: 530px;
@@ -109,6 +123,24 @@ button{
 	margin-left: 2%;
 
 }
+
+.header-row-top{
+	height:20px;
+	width:285px;
+	/*width: 50%;*/
+	font-size: 15pt;
+	float: left;
+		font-family: 'Josefin Sans', sans-serif;
+}
+
+.header-row-bottom{ /* keeps title separate from top row containg home, help and credits */
+	height: 67%;
+	width: 100%;
+	font-size: 18pt;
+	text-align: center;
+	float: left;
+}
+
 
 /*
 *
