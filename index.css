@@ -1,6 +1,21 @@
-body {
+/* Universal fonts */
+
+.headerText { /* important: use these classes to change text fonts */
 	font-family: 'Josefin Sans', sans-serif;
 }
+.bodyText { /* important: use these classes to change text fonts */
+	font-family: 'Josefin Slab', serif;
+}
+
+/*
+*
+*
+*
+*
+*
+*/
+/* Links, buttons, bootstrap */
+
 a{
 	text-decoration: none;
 	/*cursor: default;*/
@@ -12,6 +27,42 @@ button{
 .btn, .btn-secondary{
 	cursor: default;
 }
+
+.link{ /* used for tabs */
+	position: absolute;
+	width:100%;
+	height:100%;
+	padding-top: 10px;
+	top:0;
+	left: 0;
+	z-index: 1;
+}
+
+.findGroupEntries{
+	overflow: hidden;
+	overflow-y: scroll;
+	height: 60%;
+		font-family: 'Josefin Sans', sans-serif;
+}
+
+.findGroupEntry{
+	/*background-color: rgba(239, 241, 243, .6);*/
+	margin-bottom: 5px;
+}
+
+#center-button{
+	font-family: 'Josefin Sans', sans-serif;
+	justify-content: center;
+}
+
+/*
+*
+*
+*
+*
+*
+*/
+/* Screen position, header banners */
 
 #screen {
 	height: 530px;
@@ -59,6 +110,15 @@ button{
 
 }
 
+/*
+*
+*
+*
+*
+*
+*/
+/* bottom tabs */
+
 .tab-bar {
 	width: 100%;
 	display: flex;
@@ -88,36 +148,13 @@ button{
 	font-family: 'Josefin Sans', sans-serif;
 }
 
-.link{
-	position: absolute;
-	width:100%;
-	height:100%;
-	padding-top: 10px;
-	top:0;
-	left: 0;
-	z-index: 1;
+.button-text.active{ /* used to lower the text to fit the 'open drawer' graphic in active tabs */
+	padding: 40px 2px 2px 2px;
+	font-size: 12pt;
 }
 
-.findGroupEntries{
-	overflow: hidden;
-	overflow-y: scroll;
-	height: 60%;
-		font-family: 'Josefin Sans', sans-serif;
-}
-
-.findGroupEntry{
-	/*background-color: rgba(239, 241, 243, .6);*/
-	margin-bottom: 5px;
-}
-
-#center-button{
-	font-family: 'Josefin Sans', sans-serif;
-	justify-content: center;
-}
-
-/*.logo{
+/*.logo{ ****background image already has logo***
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 }*/
-
