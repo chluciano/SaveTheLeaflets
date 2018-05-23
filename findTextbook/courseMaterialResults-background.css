@@ -70,7 +70,8 @@ body {
 	align-items: center;
 	text-align: center;
 }
->>>>>>> 3d5f473acbf0351b22d781ede44ef75734c35636
+
+
 .findCourseEntries{
 	float: center;
 	overflow: hidden;
@@ -80,7 +81,6 @@ body {
 		width: 255px;
 }
 
-<<<<<<< HEAD
 .left-arrow{
 	float: left;
 	width: 10px;
@@ -108,6 +108,4 @@ body {
 	padding-top: 0px;
 		padding-bottom: 0px;
 }
-=======
 
->>>>>>> 3d5f473acbf0351b22d781ede44ef75734c35636
