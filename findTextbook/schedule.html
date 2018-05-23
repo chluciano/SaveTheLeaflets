@@ -1,7 +1,7 @@
 <html>
 <header>
    <title>groupConfirmed</title>
-   <link rel="stylesheet" type="text/css" href="../indexKofi.css"/>
+   <link rel="stylesheet" type="text/css" href="../index.css"/>
       <link rel="stylesheet" type="text/css" href="schedule-background.css"/>
 
       <meta charset="utf-8">
@@ -11,13 +11,13 @@
 </header>
    <body>
       <div id="screen"> 
-         <div class="header">
+         <div class="schedule-header">
             <div class="header-row-top">
                <div class="left">
                    <p id="credits"> 420$ </p>
                </div>
                <div class="right">
-                  <a href="../howToUse.html"><img src="https://image.flaticon.com/icons/svg/36/36601.svg" id="question-icon"></a>
+                  <a href="../howToUse/howToUse.html"><img src="https://image.flaticon.com/icons/svg/36/36601.svg" id="question-icon"></a>
                </div>
             </div>
             <!--div class="header-row-top">
@@ -34,6 +34,106 @@
 *
 * 
 -->
+         <div class="dayOfWeekHeader">
+            <h2 id="dayOfWeek">Monday</h2> <!-- banner telling user which day of week results shown -->
+               <label class="day" id="mon">M</label>
+               <label class="day" id="tues">Tu</label>
+               <label class="day" id="wed">W</label>
+               <label class="day" id="thur">Th</label>
+               <label class="day" id="fri">F</label>
+               <label class="day" id="sat">Sa</label>
+               <label class="day" id="sun">Su</label>
+         </div>
+         <div class="middle-results-schedule">
+           <div class="left-arrow" onclick="leftDay()">
+              <p><</p>
+           </div>
+           <div class="scheduleOptions">
+               <div id="am-times">
+                  <p> am </p>
+                  <div class="schedule-tab" onclick="checkColor(this)"> 
+                     <label id="am-0" class="schedule-tab">12:00</label>
+                  </div>
+                  <div class="schedule-tab" onclick="checkColor(this)"> 
+                     <label id="am-1" class="schedule-in">1:00</label>
+                  </div>
+                  <div class="schedule-tab" onclick="checkColor(this)"> 
+                     <label id="am-2" class="schedule-tab">2:00</label>
+                  </div>
+                  <div class="schedule-tab" onclick="checkColor(this)"> 
+                     <label id="am-3" class="schedule-tab">3:00</label>
+                  </div>
+                  <div class="schedule-tab" onclick="checkColor(this)"> 
+                     <label id="am-4" class="schedule-tab">4:00</label>
+                  </div>
+                  <div class="schedule-tab" onclick="checkColor(this)"> 
+                     <label id="am-5" class="schedule-tab">5:00</label>
+                  </div>
+                  <div class="schedule-tab" onclick="checkColor(this)"> 
+                     <label id="am-6" class="schedule-tab">6:00</label>
+                  </div>
+                  <div class="schedule-tab" onclick="checkColor(this)"> 
+                     <label id="am-7" class="schedule-tab">7:00</label>
+                  </div>
+                  <div class="schedule-tab" onclick="checkColor(this)"> 
+                     <label id="am-8" class="schedule-tab">8:00</label>
+                  </div>
+                  <div class="schedule-tab" onclick="checkColor(this)"> 
+                     <label id="am-9" class="schedule-tab">9:00</label>
+                  </div>
+                  <div class="schedule-tab" onclick="checkColor(this)"> 
+                     <label id="am-10" class="schedule-tab">10:00</label>
+                  </div>
+                  <div class="schedule-tab" onclick="checkColor(this)"> 
+                     <label id="am-11" class="schedule-tab">11:00</label>
+                  </div>
+               </div>
+               <div id="pm-times">
+                  <p> pm </p>
+                  <div class="schedule-tab" onclick="checkColor(this)"> 
+                     <label id="pm-12" class="schedule-tab">12:00</label>
+                  </div>
+                  <div class="schedule-tab" onclick="checkColor(this)">  
+                     <label id="pm-1" class="schedule-tab">1:00</label>
+                  </div>
+                  <div class="schedule-tab" onclick="checkColor(this)"> 
+                     <label id="pm-2" class="schedule-tab">2:00</label>
+                  </div>
+                  <div class="schedule-tab" onclick="checkColor(this)"> 
+                     <label id="pm-3" class="schedule-tab">3:00</label>
+                  </div>
+                  <div class="schedule-tab" onclick="checkColor(this)"> 
+                     <label id="pm-4" class="schedule-tab">4:00</label>
+                  </div>
+                  <div class="schedule-tab" onclick="checkColor(this)"> 
+                     <label id="pm-5" class="schedule-tab">5:00</label>
+                  </div>
+                  <div class="schedule-tab" onclick="checkColor(this)"> 
+                     <label id="pm-6" class="schedule-tab">6:00</label>
+                  </div>
+                  <div class="schedule-tab" onclick="checkColor(this)">  
+                     <label id="pm-7" class="schedule-tab">7:00</label>
+                  </div>
+                  <div class="schedule-tab" onclick="checkColor(this)"> 
+                     <label id="pm-8" class="schedule-tab">8:00</label>
+                  </div>
+                  <div class="schedule-tab" onclick="checkColor(this)"> 
+                     <label id="pm-9" class="schedule-tab">9:00</label>
+                  </div>
+                  <div class="schedule-tab" onclick="checkColor(this)"> 
+                     <label id="pm-10" class="schedule-tab">10:00</label>
+                  </div>
+                  <div class="schedule-tab" onclick="checkColor(this)"> 
+                     <label id="pm-11" class="schedule-tab">11:00</label>
+                  </div>
+               </div>
+         </div>
+              
+           </div>
+           <div class="right-arrow" onclick="rightDay()">
+              <p>></p>
+           </div>
+         </div>
          <div class="button-container"> 
             <a href="requested.html" style="margin: 10px 20px" class="btn btn-success btn-lg" role="button"> Schedule
             </a>
@@ -68,7 +168,8 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
-      <script src="groupConfirmed.js"></script>
+      <script src="findTextbook.js"></script>
+      <script src="schedule.js"></script>
    </body>
 </html>
 <!-- 
