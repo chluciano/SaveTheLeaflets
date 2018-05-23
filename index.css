@@ -42,12 +42,17 @@ button{
 	overflow: hidden;
 	overflow-y: scroll;
 	height: 50%;
-		font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
+	border: 2px solid red;
+	margin-top: 12%;
 }
 
 .findGroupEntry{
 	/*background-color: rgba(239, 241, 243, .6);*/
 	margin-bottom: 5px;
+	background-image: url("./images/bookResults.png");
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 #center-button{
@@ -98,7 +103,8 @@ html{
 
 .header-container{
 	/*background-image: url("images/WoodLight.png");*/
-	height: 70%;
+	height: 95%;
+	border: 2px solid red;
 
 
 
