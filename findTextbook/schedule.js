@@ -20,7 +20,9 @@ var day_num;
 
 function init() {
 	// Your code goes here
-    day_num = 0;
+
+    day_num = parseInt(localStorage.getItem("curDay"));
+    dayOfWeek.innerHTML = dayList[day_num];
 };
 
 
@@ -94,6 +96,7 @@ function rightDay() {
         day_num = day_num + 1;
     }
     dayOfWeek.innerHTML = dayList[day_num];
+
     updateColor()
 }
 
@@ -108,6 +111,7 @@ function leftDay() {
     
     updateColor()
 }
+
 
 
 function setMon() {

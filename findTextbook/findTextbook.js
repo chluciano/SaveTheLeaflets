@@ -118,6 +118,14 @@ function refreshDay() {
     }
 }
 
+function storeDay() {
+    localStorage.setItem("curDay",day_num)
+
+    var test = localStorage.getItem("curDay");
+    var x = 2;
+}
+
+
 function addMonday() {
     var courseEntries = document.getElementsByClassName("findCourseEntries")[0];
 
@@ -130,6 +138,7 @@ function addMonday() {
         title.innerHTML = monList[0][i];
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
+        a.setAttribute('onclick',"storeDay()");
         a.appendChild(title);
 
         var name = document.createElement("div")
@@ -162,6 +171,7 @@ function addTuesday() {
 		title.className ="headerText";
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
+        a.setAttribute('onclick',"storeDay()");
         a.appendChild(title);
 
         var name = document.createElement("div")
@@ -194,6 +204,7 @@ function addWednesday() {
         title.innerHTML = wedList[0][i];
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
+        a.setAttribute('onclick',"storeDay()");
         a.appendChild(title);
 
         var name = document.createElement("div")
@@ -226,6 +237,7 @@ function addThursday() {
         title.innerHTML = thursList[0][i];
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
+        a.setAttribute('onclick',"storeDay()");
         a.appendChild(title);
 
         var name = document.createElement("div")
@@ -258,6 +270,7 @@ function addFriday() {
         title.innerHTML = friList[0][i];
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
+        a.setAttribute('onclick',"storeDay()");
         a.appendChild(title);
 
         var name = document.createElement("div")
@@ -290,6 +303,7 @@ function addSaturday() {
         title.innerHTML = satList[0][i];
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
+        a.setAttribute('onclick',"storeDay()");
         a.appendChild(title);
 
         var name = document.createElement("div")
@@ -322,6 +336,7 @@ function addSunday() {
         title.innerHTML = sunList[0][i];
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
+        a.setAttribute('onclick',"storeDay()");
         a.appendChild(title);
 
         var name = document.createElement("div")
