@@ -99,11 +99,6 @@ body {
     align-items: none;
 }
 
-.button-container{
-    height: 50px;
-    font-family: 'Josefin Sans', sans-serif;
-    justify-content: center;
-}
 
 .tab-bar {
     width: 100%;
