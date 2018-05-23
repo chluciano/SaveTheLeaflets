@@ -103,15 +103,9 @@ html{
 
 
 .header-container{
-<<<<<<< HEAD
-	/*background-image: url("images/WoodLight.png");*/
-	height: 95%;
-
-
-=======
 	width: 100%;
 	height: 80px;
->>>>>>> 61d9d78d9c519deae3082044b57210d900da2815
+
 }
 
 #title{

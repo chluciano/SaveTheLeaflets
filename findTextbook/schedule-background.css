@@ -21,41 +21,55 @@ body {
 .schedule-tab{
 
     width: 10px;
-    height: 20px;
+    height: 15px;
     padding-top: 0px;
         padding-bottom: 0px;
 }
 
 .scheduleOptions{
-    float: center;
-    height: 20%;
-        font-family: 'Josefin Sans', sans-serif;
-        width: 255px;
+    float: left;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 260px;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 280px;
+    padding: 0px;
 }
 
 #am-times{
     float: left;
-    width: 70px;
+    text-align: center;
+    width: 130px;
 }
 
 #pm-times{
-    float: right;
-    width: 70px;
+    float: left;
+    text-align: center;
+    width: 130px;
 }
 
 .dayOfWeekHeader{
     height: 40px;
     padding-top: 0px;
     float: top;
+    text-align: center;
+}
+
+#dayOfWeek{
+    height: 20px;
+    padding-top: 0px;
+    float: top;
 }
 
 .middle-results-schedule {
-    float: center;
-    justify-content: center;
+    width: 300px;
+    height: 260px;
+    padding: 0px;
+    margin: 0px;
+    /*float: left;*/
+    align-items: center;
+    display:; flex
     text-align: center;
-    height: 200px;
-    width: 290px;
-    padding-bottom: 0px;
 }
 
 .schedule-header{
@@ -66,4 +80,34 @@ body {
     height: 70px;
     font-family: 'Josefin Sans', sans-serif, !important;
     padding-bottom: 0px;
+}
+
+.navWeek {
+    width: 10px;
+    height: 260px;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+
+#leftbutton {
+    padding: 0px;
+    margin: 0px;
+    height: 260px;'
+    width: 20px;
+    float: left;
+    align-items: none;
+}
+
+.button-container{
+    height: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    justify-content: center;
+}
+
+.tab-bar {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
 }

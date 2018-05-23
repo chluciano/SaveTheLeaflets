@@ -11,7 +11,7 @@
 </header>
    <body>
       <div id="screen"> 
-         <div class="schedule-header">
+         <div class="header">
             <div class="header-row-top">
                <div class="left">
                    <p id="credits"> 420$ </p>
@@ -35,7 +35,7 @@
 * 
 -->
          <div class="dayOfWeekHeader">
-            <h2 id="dayOfWeek">Monday</h2> <!-- banner telling user which day of week results shown -->
+            <h2 id="dayOfWeek">Monday</h2> 
                <label class="day" id="mon" onclick="setMon()">M</label>
                <label class="day" id="tues" onclick="setTues()">Tu</label>
                <label class="day" id="wed" onclick="setWed()">W</label>
@@ -45,8 +45,8 @@
                <label class="day" id="sun" onclick="setSun()">Su</label>
          </div>
          <div class="middle-results-schedule">
-           <div class="left-arrow" onclick="leftDay()">
-              <p><</p>
+           <div class="navWeek" onclick="leftDay()">
+              <button id="leftButton" type="button" class="btn btn-outline-primary"> < </button>
            </div>
            <div class="scheduleOptions">
                <div id="am-times">
@@ -127,13 +127,13 @@
                      <label id="pm-11" class="schedule-tab">11:00</label>
                   </div>
                </div>
+            </div>
+            <div class="navWeek" onclick="rightDay()">
+              <button id="leftButton" type="button" class="btn btn-outline-primary"> > </button>
+            </div>          
          </div>
-              
-           </div>
-           <div class="right-arrow" onclick="rightDay()">
-              <p>></p>
-           </div>
-         </div>
+
+
          <div class="button-container"> 
             <a href="requested.html" style="margin: 10px 20px" class="btn btn-success btn-lg" role="button"> Schedule
             </a>
@@ -163,6 +163,7 @@
                <h4 class="button-text"> Profile </h4>
             </div>
          </div>
+        </div>
       </div>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
