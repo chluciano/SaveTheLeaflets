@@ -10,17 +10,16 @@
 </header>
    <body>
       <div id="screen"> 
-         <div class="header">
-            <div class="header-container">
-               <div class="header-row-top">
+        <div class="header-container">
+             <div class="header-row-top">
                   <p id="credits"> $420 </p>
                   <a href="howToUse.html"><img src="https://image.flaticon.com/icons/svg/36/36601.svg" id="question-icon"></a>
-               </div>
-               <div class="header-row-bottom">
+             </div>
+             <div class="header-row-bottom">
                   <h1 id="title"> Search Course Materials</h1>
-               </div>
-            
-            <div class="search">
+             </div>
+		</div>
+		<div class="search">
               <div class="input-group input-group-sm mb-3">
                 <input type="text" class="form-control" placeholder="Textbook" aria-label="Textbook" aria-describedby="basic-addon1">
                 <div class="input-group-append">
@@ -28,20 +27,17 @@
                 </div>
               </div>
          </div>
-       </div>
-     </div>
-		 <div>
+		 <div class="day-container">
+			<p class="bodyText navWeek-instructions">swipe left for Sun</p>
 			<h2 id="dayOfWeek">Monday</h2> <!-- banner telling user which day of week results shown -->
+			<p class="bodyText navWeek-instructions">swipe right for Tue</p>
 		 </div>
 		 <!-- two containers, one of the left of the results and the other one the right, should be buttons for the user to 'swipe' 
 		 to a different day-->
-         <div class="up-arrow">
-          <p>Up</p>
+         <div class="navWeek" onclick="leftDay()">
+			<button id="leftButton" type="button" class="btn btn-outline-primary"> < </button>
          </div>
          <div class="middle-results">
-           <div class="left-arrow" onclick="leftDay()">
-              <p><</p>
-           </div>
            <div class="findCourseEntries">
               <div class="row findGroupEntry">
                   <div class="col-4 text-center">
@@ -116,15 +112,12 @@
                   </div>
                 </div>
            </div>
-           <div class="right-arrow" onclick="rightDay()">
-              <p>></p>
-           </div>
          </div>
-         <div class="down-arrow">
-          <p>Down</p>
+         <div class="navWeek" onclick="rightDay()">
+          <button id="leftButton" type="button" class="btn btn-outline-primary"> > </button>
          </div>
          <div class="button-container"> 
-            <a href="../createGroup/findGroup-input.html" style="margin: 10px 20px" class="btn btn-success btn-lg" role="button">
+            <a href="../createGroup/findGroup-input.html" style="margin: 10px 20px" class="btn btn-secondary btn-lg" role="button">
                Find a Group
             </a>
          </div>         
