@@ -90,21 +90,22 @@ html{
 .header{
 	display: flex;
 	flex-direction: column;
-	height: 25%;
+	height: 73px;
 	font-family: 'Josefin Sans', sans-serif, !important;
 }
 
 
 .header-container{
 	width: 100%;
-	/*background-image: url("images/WoodLight.png");*/
+	height: 80px;
 }
 
 #title{
 	font-family: 'Josefin Sans', sans-serif;
 	text-align: center;
 	line-height: 0.8;
-	font-size: 25pt;
+	font-size: 23pt;
+	margin-bottom: 0px;
 }
 
 .credits{
