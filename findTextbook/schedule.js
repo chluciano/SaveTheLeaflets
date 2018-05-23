@@ -1,25 +1,30 @@
 // Create your global variables below:
 var dayCheckCount = [0,0,0,0,0,0,0];
 var dayList = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
-var amState = [[false,false,false,false,false,false,false,false,false,false,false,false],
-               [false,false,false,false,false,false,false,false,false,false,false,false],
-               [false,false,false,false,false,false,false,false,false,false,false,false],
-               [false,false,false,false,false,false,false,false,false,false,false,false],
-               [false,false,false,false,false,false,false,false,false,false,false,false],
-               [false,false,false,false,false,false,false,false,false,false,false,false],
-               [false,false,false,false,false,false,false,false,false,false,false,false]];
-var pmState =  [[false,false,false,false,false,false,false,false,false,false,false,false],
-               [false,false,false,false,false,false,false,false,false,false,false,false],
-               [false,false,false,false,false,false,false,false,false,false,false,false],
-               [false,false,false,false,false,false,false,false,false,false,false,false],
-               [false,false,false,false,false,false,false,false,false,false,false,false],
-               [false,false,false,false,false,false,false,false,false,false,false,false],
-               [false,false,false,false,false,false,false,false,false,false,false,false]];
+var amState = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]];
+var pmState =  [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]];
 var day_num;
 
 
 function init() {
 	// Your code goes here
+
+    var mon_avail = parseInt(localStorage.getItem("monAvail"));
+    var tues_avail = parseInt(localStorage.getItem("tuesAvail"));
+    var wed_avail = parseInt(localStorage.getItem("wedAvail"));
+        var thirs_avail = parseInt(localStorage.getItem("wedAvail"));
 
     day_num = parseInt(localStorage.getItem("curDay"));
     dayOfWeek.innerHTML = dayList[day_num];
@@ -34,23 +39,24 @@ function checkColor(el) {
     var num = parseInt(num_str);
 
     if (id_name.includes('am')) {
-        if(amState[day_num][num] == false) {
+        if(amState[day_num][num] == 0) {
             el.style.color = "#004ba0"
-            amState[day_num][num] = true
+            amState[day_num][num] = 1
             dayCheckCount[day_num] = dayCheckCount[day_num] + 1;
-        } else {
+
+        } else if (amState[day_num][num] == 1) {
             el.style.color = "#000000"
-            amState[day_num][num] = false
+            amState[day_num][num] = 0
             dayCheckCount[day_num] = dayCheckCount[day_num] - 1;
         }
     } else {
-        if(pmState[day_num][num] == false) {
+        if(pmState[day_num][num] == 0) {
             el.style.color = "#004ba0"
-            pmState[day_num][num] = true
+            pmState[day_num][num] = 1
             dayCheckCount[day_num] = dayCheckCount[day_num] + 1;
-        } else {
+        } else if (pmState[day_num][num] == 1){
             el.style.color = "#000000"
-            pmState[day_num][num] = false
+            pmState[day_num][num] = 0
             dayCheckCount[day_num] = dayCheckCount[day_num] - 1;
         }
     }
@@ -61,18 +67,22 @@ function checkColor(el) {
 function updateColor() {
     var days = document.getElementsByClassName("schedule-tab-out")
     for (i=0; i < 12; i++){
-        if (amState[day_num][i] == true) {
+        if (amState[day_num][i] == 1) {
             days[i].style.color = "#004ba0"
-        } else {
+        } else if (amState[day_num][i] == 0) {
             days[i].style.color = "#000000"
+        } else if (amState[day_num][i] == 2) {
+            days[i].style.color = "#eeeeee"
         }
     }
 
     for (i=12; i < 24; i++){
-        if (pmState[day_num][i] == true) {
+        if (pmState[day_num][i] == 1) {
             days[i].style.color = "#004ba0"
-        } else {
+        } else if (pmState[day_num][i] == 0) {
             days[i].style.color = "#000000"
+        } else if (pmState[day_num][i] == 2) {
+            days[i].style.color = "#eeeeee"
         }
     }
 }
@@ -82,8 +92,10 @@ function updateDayHighlight() {
     for (i=0; i < 7; i++){
         if (dayCheckCount[i] > 0) {
             day[i].style.color = "#004ba0"
-        } else {
+        } else if (dayCheckCount[i] == 0){
             day[i].style.color = "#000000"
+        } else if (dayCheckCount[i] == -1){
+            day[i].style.color = "#eeeeee"
         }
     }
 }
