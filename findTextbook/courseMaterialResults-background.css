@@ -42,17 +42,28 @@ body {
 	float: left;
 }
 
-#button-info {
-	float: left;
+#speech-bubble {
+	width: 120px;
+	height: 100px;
+	background-image: url("../images/SpeechBubble.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 130px 100px;
+	padding-right: 10px;
 	margin: 0px;
-	padding: 15px 5px 0px 20px;
-	width: 35%;
+	float: left;
+}
+
+#button-info {
+	margin: 0px;
+	padding: 15px 0px 0px 20px;
+	width: 80px;
 	font-size: 10pt;
 	line-height: 1.0;
 }
 
 #button-to-sharing {
-	margin: 10px;
+	margin: 10px 0px 0px 0px;
 	height: 60px;
 	float: left;
 	line-height: 1.0;
