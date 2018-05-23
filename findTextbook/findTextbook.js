@@ -2,22 +2,64 @@
 var dayList = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
 var grouplist="Alex Anders"
 
-var monList = [["History 255","History 255","History 301"],
-               ["Something about textbook","Something about textbook","Something about textbook"]];
-var tuesList = [["History 250","History 260","History 301"],
-               ["Something about textbook","Something about textbook","Something about textbook"]];
-var wedList = [["History 260","History 260"],
-               ["Something about textbook","Something about textbook"]];
+var monList = [["1. History 255",
+				"2. History 255",
+				"3. History 301"],
+               ["Something about textbook",
+			   "Something about textbook",
+			   "Something about textbook"]];
+			   
+var tuesList = [["1. History 250",
+				 "2. History 260",
+				 "3. History 301"],
+               ["Something about textbook",
+				"Something about textbook",
+				"Something about textbook"]];
+				
+var wedList = [["1. History 260",
+				"2. History 260"],
+               ["Something about textbook",
+			   "Something about textbook"]];
+			   
 var thursList = [[],
                []];
-var friList = [["History 250","History 250","History 250","History 260","History 260","History 301"],
-               ["Something about textbook","Something about textbook","Something about textbook","Something about textbook","Something about textbook","Something about textbook"]];
-var satList = [["History 260","History 260","History 301","History 301","History 301"],
-               ["Something about textbook","Something about textbook","Something about textbook","Something about textbook","Something about textbook"]];
-var sunList = [["History 250","History 250","History 250","History 250","History 250","History 250"],
-               ["Something about textbook","Something about textbook","Something about textbook","Something about textbook","Something about textbook","Something about textbook"]];
-
-
+			   
+var friList = [["1. History 250",
+				"2. History 250",
+				"3. History 250",
+				"4. History 260",
+				"5. History 260",
+				"6. History 301"],
+               ["Something about textbook",
+			   "Something about textbook",
+			   "Something about textbook",
+			   "Something about textbook",
+			   "Something about textbook",
+			   "Something about textbook"]];
+			   
+var satList = [["1. History 260",
+				"2. History 260",
+				"3. History 301",
+				"4. History 301",
+				"5. History 301"],
+               ["Something about textbook",
+			   "Something about textbook",
+			   "Something about textbook",
+			   "Something about textbook",
+			   "Something about textbook"]];
+			   
+var sunList = [["1. History 250",
+				"2. History 250",
+				"3. History 250",
+				"4. History 250",
+				"5. History 250",
+				"6. History 250"],
+               ["Something about textbook",
+			   "Something about textbook",
+			   "Something about textbook",
+			   "Something about textbook",
+			   "Something about textbook",
+			   "Something about textbook"]];
 
 var day_num;
 
