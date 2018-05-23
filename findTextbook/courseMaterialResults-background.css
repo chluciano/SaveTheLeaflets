@@ -19,3 +19,53 @@ body {
 	width: 10px;
 	height: 90px;
 }
+
+/***************************************************************************************************/
+/*courseMaterialResult*/
+.middle-results {
+	float: center;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 50%;
+	width: 290px;
+	position: relative;
+	padding-bottom: 0px;
+}
+
+.findCourseEntries{
+	float: center;
+	overflow: hidden;
+	overflow-y: scroll;
+	height: 70%;
+		font-family: 'Josefin Sans', sans-serif;
+		width: 255px;
+}
+
+.left-arrow{
+	float: left;
+	width: 10px;
+	padding-bottom: 0px;
+}
+
+.right-arrow{
+	float: right;
+	width: 10px;
+	padding-bottom: 0px;
+}
+
+.up-arrow{
+	float: right;
+	width: 10px;
+	height: 15px;
+		padding-top: 0px;
+			padding-bottom: 0px;
+}
+
+.down-arrow{
+	float: right;
+	width: 10px;
+	height: 15px;
+	padding-top: 0px;
+		padding-bottom: 0px;
+}
