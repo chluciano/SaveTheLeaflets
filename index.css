@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab');
 /* Universal fonts */
-
 .headerText { /* important: use these classes to change text fonts */
 	font-family: 'Josefin Sans', sans-serif;
 }
@@ -101,8 +101,10 @@ html{
 }
 
 #title{
-	font-family: 'Josefin Sans', sans-serif, !important;
+	font-family: 'Josefin Sans', sans-serif;
 	text-align: center;
+	line-height: 0.8;
+	font-size: 25pt;
 }
 
 .credits{
@@ -181,7 +183,7 @@ html{
 }
 
 .button-text.active{ /* used to lower the text to fit the 'open drawer' graphic in active tabs */
-	padding: 40px 2px 2px 2px;
+	padding: 35px 2px 2px 2px;
 	font-size: 12pt;
 }
 
