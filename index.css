@@ -48,10 +48,12 @@ button{
 
 .findGroupEntry{
 	/*background-color: rgba(239, 241, 243, .6);*/
+
 	background-image: url("./images/bookResults.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	height: 30%;
+	margin-bottom: 5px;
 
 }
 
@@ -61,12 +63,13 @@ button{
 }
 
 .left { /* Kofi used this for columns I think */
-
+	width:10px;
+	float:left;
 }
 .right {
 	width:140px;
 	text-align: right;
-
+	float:right;
 	font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -94,53 +97,50 @@ html{
 .header{
 	display: flex;
 	flex-direction: column;
-	height: 15%;
+	height: 73px;
 	font-family: 'Josefin Sans', sans-serif, !important;
-
-
 }
 
 
 .header-container{
+<<<<<<< HEAD
 	/*background-image: url("images/WoodLight.png");*/
 	height: 95%;
 
 
-
+=======
+	width: 100%;
+	height: 80px;
+>>>>>>> 61d9d78d9c519deae3082044b57210d900da2815
 }
-
-
 
 #title{
 	font-family: 'Josefin Sans', sans-serif;
 	text-align: center;
 	line-height: 0.8;
-	font-size: 25pt;
+	font-size: 23pt;
+	margin-bottom: 0px;
 }
 
 .credits{
+	text-align: right;
 	font-size: 10pt;
-
 }
 
 #question-icon{
 	height: 25px;
 	width: 25px;
-	padding: 10%;
+	padding: 2%;
 	border: 2px solid black;
 	border-radius: 12.5px;
 	background-color: white;
 
 }
 
-#home-icon{
-	margin-left: 2%;
-
-}
 
 .header-row-top{
-	height: 30%;
-	width:100%;
+	height:20px;
+	width: 100%;
 	/*width: 50%;*/
 	font-size: 15pt;
 	font-family: 'Josefin Sans', sans-serif;
@@ -149,11 +149,8 @@ html{
 	justify-content: space-between;
 }
 
-.header-row-top-container{
-}
-
 .header-row-bottom{ /* keeps title separate from top row containg home, help and credits */
-	height: 85%;
+	height: 67%;
 	width: 100%;
 	font-size: 18pt;
 	text-align: center;
@@ -254,12 +251,56 @@ html{
 		padding-bottom: 0px;
 }
 
-/*.logo{ ****background image already has logo***
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-}*/
 
-h1{
+/***************************************************************************************************/
+/*schedule*/
+
+.schedule-tab{
+
+	width: 10px;
+	height: 20px;
+	padding-top: 0px;
+		padding-bottom: 0px;
+}
+
+.scheduleOptions{
+	float: center;
+	height: 20%;
+		font-family: 'Josefin Sans', sans-serif;
+		width: 255px;
+}
+
+#am-times{
+	float: left;
+	width: 70px;
+}
+
+#pm-times{
+	float: right;
+	width: 70px;
+}
+
+.dayOfWeekHeader{
+ 	height: 40px;
+ 	padding-top: 0px;
+ 	float: top;
+}
+
+.middle-results-schedule {
+	float: center;
+	justify-content: center;
+	text-align: center;
+	height: 200px;
+	width: 290px;
+	padding-bottom: 0px;
+}
+
+.schedule-header{
+	display: flex;
+	flex-direction: column;
+		justify-content: center;
+
+	height: 70px;
 	font-family: 'Josefin Sans', sans-serif, !important;
+	padding-bottom: 0px;
 }
