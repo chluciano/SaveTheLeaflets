@@ -33,16 +33,17 @@ body {
 }
 
 .navWeek {
-	width: 15px;
+	width: 10px;
 	height: 180px;
 	margin: 0px;
 	padding: 0px;
+	float: left;
 }
 
 /***************************************************************************************************/
 /*courseMaterialResult*/
 .middle-results {
-	float: center;
+	display: inline-block;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -57,28 +58,30 @@ body {
 	padding: 0px;
 	margin: 0px;
 	height: 180px;'
+	width: 20px;
 	float: left;
 	align-items: none;
 }
 
 .middle-results {
-	width: 250px;
+	width: 300px;
 	height: 180px;
 	padding: 0px;
 	margin: 0px;
-	float: left;
+	/*float: left;*/
 	align-items: center;
+	display:; flex
 	text-align: center;
 }
 
-
 .findCourseEntries{
-	float: center;
+	float: left;
 	overflow: hidden;
 	overflow-y: scroll;
-	height: 70%;
-		font-family: 'Josefin Sans', sans-serif;
-		width: 255px;
+	height: 180px;
+	font-family: 'Josefin Sans', sans-serif;
+	width: 280px;
+	padding: 0px;
 }
 
 .left-arrow{
