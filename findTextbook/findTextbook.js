@@ -127,21 +127,23 @@ function addMonday() {
         top.className = "row findGroupEntry"
 
         var title = document.createElement("p");
+		title.className ="headerText";
         title.innerHTML = monList[0][i];
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
         a.appendChild(title);
 
         var name = document.createElement("div")
-        name.className = "col-4 text-center"
+        name.className = "col-5 text-center"
         name.appendChild(a)
         top.appendChild(name) 
 
         var info = document.createElement("p");
+		info.className = "bodyText";
         info.innerHTML = monList[1][i];
 
         var info_top = document.createElement("div")
-        info_top.className = "col-8"
+        info_top.className = "col-7"
         info_top.appendChild(info)
         top.appendChild(info_top) 
 
@@ -158,20 +160,22 @@ function addTuesday() {
 
         var title = document.createElement("p");
         title.innerHTML = tuesList[0][i];
+		title.className ="headerText";
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
         a.appendChild(title);
 
         var name = document.createElement("div")
-        name.className = "col-4 text-center"
+        name.className = "col-5 text-center"
         name.appendChild(a)
         top.appendChild(name) 
 
         var info = document.createElement("p");
+		info.className ="bodyText";
         info.innerHTML = tuesList[1][i];
 
         var info_top = document.createElement("div")
-        info_top.className = "col-8"
+        info_top.className = "col-7"
         info_top.appendChild(info)
         top.appendChild(info_top) 
 
@@ -187,21 +191,23 @@ function addWednesday() {
         top.className = "row findGroupEntry"
 
         var title = document.createElement("p");
+		title.className ="headerText";
         title.innerHTML = wedList[0][i];
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
         a.appendChild(title);
 
         var name = document.createElement("div")
-        name.className = "col-4 text-center"
+        name.className = "col-5 text-center"
         name.appendChild(a)
         top.appendChild(name) 
 
         var info = document.createElement("p");
+		info.className = "bodyText"
         info.innerHTML = wedList[1][i];
 
         var info_top = document.createElement("div")
-        info_top.className = "col-8"
+        info_top.className = "col-7"
         info_top.appendChild(info)
         top.appendChild(info_top) 
 
@@ -217,21 +223,23 @@ function addThursday() {
         top.className = "row findGroupEntry"
 
         var title = document.createElement("p");
+		title.className ="headerText";
         title.innerHTML = thursList[0][i];
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
         a.appendChild(title);
 
         var name = document.createElement("div")
-        name.className = "col-4 text-center"
+        name.className = "col-5 text-center"
         name.appendChild(a)
         top.appendChild(name) 
 
         var info = document.createElement("p");
+		info.className = "bodyText"
         info.innerHTML = thursList[1][i];
 
         var info_top = document.createElement("div")
-        info_top.className = "col-8"
+        info_top.className = "col-7"
         info_top.appendChild(info)
         top.appendChild(info_top) 
 
@@ -247,21 +255,23 @@ function addFriday() {
         top.className = "row findGroupEntry"
 
         var title = document.createElement("p");
+		title.className ="headerText";
         title.innerHTML = friList[0][i];
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
         a.appendChild(title);
 
         var name = document.createElement("div")
-        name.className = "col-4 text-center"
+        name.className = "col-5 text-center"
         name.appendChild(a)
         top.appendChild(name) 
 
         var info = document.createElement("p");
+		info.className = "bodyText";
         info.innerHTML = friList[1][i];
 
         var info_top = document.createElement("div")
-        info_top.className = "col-8"
+        info_top.className = "col-7"
         info_top.appendChild(info)
         top.appendChild(info_top) 
 
@@ -277,21 +287,23 @@ function addSaturday() {
         top.className = "row findGroupEntry"
 
         var title = document.createElement("p");
+		title.className ="headerText";
         title.innerHTML = satList[0][i];
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
         a.appendChild(title);
 
         var name = document.createElement("div")
-        name.className = "col-4 text-center"
+        name.className = "col-5 text-center"
         name.appendChild(a)
         top.appendChild(name) 
 
         var info = document.createElement("p");
+		info.className = "bodyText";
         info.innerHTML = satList[1][i];
 
         var info_top = document.createElement("div")
-        info_top.className = "col-8"
+        info_top.className = "col-7"
         info_top.appendChild(info)
         top.appendChild(info_top) 
 
@@ -307,21 +319,23 @@ function addSunday() {
         top.className = "row findGroupEntry"
 
         var title = document.createElement("p");
+		title.className ="headerText";
         title.innerHTML = sunList[0][i];
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
         a.appendChild(title);
 
         var name = document.createElement("div")
-        name.className = "col-4 text-center"
+        name.className = "col-5 text-center"
         name.appendChild(a)
         top.appendChild(name) 
 
         var info = document.createElement("p");
+		info.className = "bodyText";
         info.innerHTML = sunList[1][i];
 
         var info_top = document.createElement("div")
-        info_top.className = "col-8"
+        info_top.className = "col-7"
         info_top.appendChild(info)
         top.appendChild(info_top) 
 
