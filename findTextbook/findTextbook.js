@@ -1,6 +1,5 @@
 // Create your global variables below:
 var dayList = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
-var grouplist="Alex Anders"
 
 var monList = [["1. History 255",
 				"2. History 255",
@@ -326,24 +325,6 @@ function addSunday() {
         top.appendChild(info_top) 
 
         courseEntries.appendChild(top)
-    }
-}
-
-function checkBox(el) {
-    var clicked = el.getElementsByClassName("left-agent")[0].getElementsByClassName("form-check-input")[0].checked;
-    if (clicked == true) {
-       el.getElementsByClassName("left-agent")[0].getElementsByClassName("form-check-input")[0].checked = false;
-    } else {
-       el.getElementsByClassName("left-agent")[0].getElementsByClassName("form-check-input")[0].checked = true;
-    }
-}
-
-function checkBoxFix(el) {
-    var clicked = el.getElementsByClassName("form-check-input")[0].checked;
-    if (clicked == true) {
-       el.getElementsByClassName("form-check-input")[0].checked = false;
-    } else {
-       el.getElementsByClassName("form-check-input")[0].checked = true;
     }
 }
 
