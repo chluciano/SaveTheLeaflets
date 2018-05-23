@@ -3,21 +3,40 @@ body {
     background-repeat: no-repeat;
 }
 
-#dayOfWeek {
-	font-family: 'Josefin Sans', sans-serif;
-	text-align: center;
-	margin-bottom: 0px;
-}
-
 .search {
 	width: 100%;
 	height: 40px;
 	margin-bottom: 5px;
+	float: left;
+}
+
+.day-container {
+	float: left;
+	width: 100%;
+	height: 40px;
+}
+
+#dayOfWeek {
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	margin-bottom: 0px;
+	float: left;
+	width: 200px;
+}
+
+.navWeek-instructions{
+	float: left;
+	width: 50px;
+	font-size: 10pt;
+	line-height: 1.0;
+	text-align: center;
 }
 
 .navWeek {
-	width: 10px;
-	height: 90px;
+	width: 15px;
+	height: 180px;
+	margin: 0px;
+	padding: 0px;
 }
 
 /***************************************************************************************************/
@@ -33,6 +52,25 @@ body {
 	padding-bottom: 0px;
 }
 
+
+#leftbutton {
+	padding: 0px;
+	margin: 0px;
+	height: 180px;'
+	float: left;
+	align-items: none;
+}
+
+.middle-results {
+	width: 250px;
+	height: 180px;
+	padding: 0px;
+	margin: 0px;
+	float: left;
+	align-items: center;
+	text-align: center;
+}
+>>>>>>> 3d5f473acbf0351b22d781ede44ef75734c35636
 .findCourseEntries{
 	float: center;
 	overflow: hidden;
@@ -42,6 +80,7 @@ body {
 		width: 255px;
 }
 
+<<<<<<< HEAD
 .left-arrow{
 	float: left;
 	width: 10px;
@@ -69,3 +108,6 @@ body {
 	padding-top: 0px;
 		padding-bottom: 0px;
 }
+=======
+
+>>>>>>> 3d5f473acbf0351b22d781ede44ef75734c35636
