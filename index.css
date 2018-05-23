@@ -41,7 +41,7 @@ button{
 .findGroupEntries{
 	overflow: hidden;
 	overflow-y: scroll;
-	height: 60%;
+	height: 50%;
 		font-family: 'Josefin Sans', sans-serif;
 }
 
