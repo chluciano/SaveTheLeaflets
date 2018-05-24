@@ -26,3 +26,6 @@ All HTML pages also reference the main CSS file index.css for universal fonts, b
 *
 *
 Directory
+*
+*
+*
