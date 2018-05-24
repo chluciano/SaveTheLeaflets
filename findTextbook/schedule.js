@@ -78,6 +78,7 @@ function init() {
             pmState[6][i] = 2
         }
     }        
+>>>>>>> b9fce9d30a220507db30ab8c9e13d2f9512adba3
 
     day_num = parseInt(localStorage.getItem("curDay"));
     dayOfWeek.innerHTML = dayList[day_num];
