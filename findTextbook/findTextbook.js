@@ -175,8 +175,12 @@ function addMonday() {
         top.className = "row findGroupEntry"
 
         var dataTable = document.createElement("div");
+        var a = document.createElement("a");
+        a.setAttribute('href',"selectBook.html");
+        a.setAttribute('onclick',"storeDay()");
         dataTable.className = "dataTable";
-        top.appendChild(dataTable);
+        a.appendChild(dataTable)
+        top.appendChild(a);
 
         var dataTableRow = document.createElement("div");
         dataTableRow.className = "dataTable-row";
@@ -184,10 +188,9 @@ function addMonday() {
 
         var bookName = document.createElement("p");
         bookName.innerHTML = monList[0][i];
-        var a = document.createElement("a");
-        a.setAttribute('href',"selectBook.html");
-        a.setAttribute('onclick',"storeDay()");
-        a.appendChild(bookName);
+
+
+        //a.appendChild(bookName);
         dataTableRow.appendChild(bookName);
 
         var bookOwner = document.createElement("p");
@@ -260,8 +263,12 @@ function addTuesday() {
         top.className = "row findGroupEntry"
 
         var dataTable = document.createElement("div");
+        var a = document.createElement("a");
+        a.setAttribute('href',"selectBook.html");
+        a.setAttribute('onclick',"storeDay()");
         dataTable.className = "dataTable";
-        top.appendChild(dataTable);
+        a.appendChild(dataTable)
+        top.appendChild(a);
 
         var dataTableRow = document.createElement("div");
         dataTableRow.className = "dataTable-row";
@@ -269,10 +276,6 @@ function addTuesday() {
 
         var bookName = document.createElement("p");
         bookName.innerHTML = tuesList[0][i];
-        var a = document.createElement("a");
-        a.setAttribute('href',"selectBook.html");
-        a.setAttribute('onclick',"storeDay()");
-        a.appendChild(bookName);
         dataTableRow.appendChild(bookName);
 
         var bookOwner = document.createElement("p");
@@ -349,8 +352,12 @@ function addWednesday() {
         top.className = "row findGroupEntry"
 
         var dataTable = document.createElement("div");
+        var a = document.createElement("a");
+        a.setAttribute('href',"selectBook.html");
+        a.setAttribute('onclick',"storeDay()");
         dataTable.className = "dataTable";
-        top.appendChild(dataTable);
+        a.appendChild(dataTable)
+        top.appendChild(a);
 
         var dataTableRow = document.createElement("div");
         dataTableRow.className = "dataTable-row";
@@ -358,10 +365,6 @@ function addWednesday() {
 
         var bookName = document.createElement("p");
         bookName.innerHTML = wedList[0][i];
-        var a = document.createElement("a");
-        a.setAttribute('href',"selectBook.html");
-        a.setAttribute('onclick',"storeDay()");
-        a.appendChild(bookName);
         dataTableRow.appendChild(bookName);
 
         var bookOwner = document.createElement("p");
@@ -439,8 +442,12 @@ function addThursday() {
         top.className = "row findGroupEntry"
 
         var dataTable = document.createElement("div");
+        var a = document.createElement("a");
+        a.setAttribute('href',"selectBook.html");
+        a.setAttribute('onclick',"storeDay()");
         dataTable.className = "dataTable";
-        top.appendChild(dataTable);
+        a.appendChild(dataTable)
+        top.appendChild(a);
 
         var dataTableRow = document.createElement("div");
         dataTableRow.className = "dataTable-row";
@@ -448,10 +455,6 @@ function addThursday() {
 
         var bookName = document.createElement("p");
         bookName.innerHTML = thursList[0][i];
-        var a = document.createElement("a");
-        a.setAttribute('href',"selectBook.html");
-        a.setAttribute('onclick',"storeDay()");
-        a.appendChild(bookName);
         dataTableRow.appendChild(bookName);
 
         var bookOwner = document.createElement("p");
@@ -528,8 +531,12 @@ function addFriday() {
         top.className = "row findGroupEntry"
 
         var dataTable = document.createElement("div");
+        var a = document.createElement("a");
+        a.setAttribute('href',"selectBook.html");
+        a.setAttribute('onclick',"storeDay()");
         dataTable.className = "dataTable";
-        top.appendChild(dataTable);
+        a.appendChild(dataTable)
+        top.appendChild(a);
 
         var dataTableRow = document.createElement("div");
         dataTableRow.className = "dataTable-row";
@@ -617,8 +624,12 @@ function addSaturday() {
         top.className = "row findGroupEntry"
 
         var dataTable = document.createElement("div");
+        var a = document.createElement("a");
+        a.setAttribute('href',"selectBook.html");
+        a.setAttribute('onclick',"storeDay()");
         dataTable.className = "dataTable";
-        top.appendChild(dataTable);
+        a.appendChild(dataTable)
+        top.appendChild(a);
 
         var dataTableRow = document.createElement("div");
         dataTableRow.className = "dataTable-row";
@@ -706,8 +717,12 @@ function addSunday() {
         top.className = "row findGroupEntry"
 
         var dataTable = document.createElement("div");
+        var a = document.createElement("a");
+        a.setAttribute('href',"selectBook.html");
+        a.setAttribute('onclick',"storeDay()");
         dataTable.className = "dataTable";
-        top.appendChild(dataTable);
+        a.appendChild(dataTable)
+        top.appendChild(a);
 
         var dataTableRow = document.createElement("div");
         dataTableRow.className = "dataTable-row";
