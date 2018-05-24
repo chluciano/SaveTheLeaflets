@@ -149,7 +149,7 @@ function updateDayHighlight() {
         } else if (dayCheckCount[i] == 0){
             day[i].style.color = "#000000"
         } else if (dayCheckCount[i] == -1){
-            day[i].style.color = "#eeeeee"
+            day[i].style.color = "#b9987e"
         }
     }
 }
