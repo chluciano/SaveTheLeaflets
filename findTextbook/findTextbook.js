@@ -1,5 +1,6 @@
 // Create your global variables below:
 var dayList = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+var avail_list = [0, 0, 0, 0, 0, 0, 0];
 
 var monList = [["1. History 255",
 				"2. History 255",
@@ -66,6 +67,14 @@ var day_num;
 function init() {
 	// Your code goes here
     day_num = 0;
+    avail_list[0] = 0;
+    avail_list[1] = -1;
+    avail_list[2] = 0;
+    avail_list[3] = -1;
+    avail_list[4] = 0;
+    avail_list[5] = 0;
+    avail_list[6] = 0;
+
 };
 
 function rightDay() {
@@ -120,9 +129,13 @@ function refreshDay() {
 
 function storeDay() {
     localStorage.setItem("curDay",day_num)
-
-    var test = localStorage.getItem("curDay");
-    var x = 2;
+    localStorage.setItem("monAvail",avail_list[0])
+    localStorage.setItem("tuesAvail",avail_list[1])
+    localStorage.setItem("wedAvail",avail_list[2])
+    localStorage.setItem("thursAvail",avail_list[3])
+    localStorage.setItem("friAvail",avail_list[4])
+    localStorage.setItem("satAvail",avail_list[5])
+    localStorage.setItem("sunAvail",avail_list[6])    
 }
 
 
@@ -156,6 +169,14 @@ function addMonday() {
         top.appendChild(info_top) 
 
         courseEntries.appendChild(top)
+
+        avail_list[0] = 0;
+        avail_list[1] = -1;
+        avail_list[2] = 0;
+        avail_list[3] = -1;
+        avail_list[4] = 0;
+        avail_list[5] = 0;
+        avail_list[6] = 0;
     }
 }
 
@@ -189,6 +210,14 @@ function addTuesday() {
         top.appendChild(info_top) 
 
         courseEntries.appendChild(top)
+
+        avail_list[0] = 0;
+        avail_list[1] = 0;
+        avail_list[2] = 0;
+        avail_list[3] = -1;
+        avail_list[4] = -1;
+        avail_list[5] = -1;
+        avail_list[6] = -1;
     }
 }
 
@@ -222,6 +251,15 @@ function addWednesday() {
         top.appendChild(info_top) 
 
         courseEntries.appendChild(top)
+
+
+        avail_list[0] = -1;
+        avail_list[1] = -1;
+        avail_list[2] = 0;
+        avail_list[3] = 0;
+        avail_list[4] = 0;
+        avail_list[5] = 0;
+        avail_list[6] = -1;
     }
 }
 
@@ -255,6 +293,14 @@ function addThursday() {
         top.appendChild(info_top) 
 
         courseEntries.appendChild(top)
+
+        avail_list[0] = -1;
+        avail_list[1] = -1;
+        avail_list[2] = 0;
+        avail_list[3] = 0;
+        avail_list[4] = 0;
+        avail_list[5] = 0;
+        avail_list[6] = -1;
     }
 }
 
@@ -288,6 +334,14 @@ function addFriday() {
         top.appendChild(info_top) 
 
         courseEntries.appendChild(top)
+
+        avail_list[0] = -1;
+        avail_list[1] = 0;
+        avail_list[2] = -1;
+        avail_list[3] = -1;
+        avail_list[4] = 0;
+        avail_list[5] = 0;
+        avail_list[6] = 0;
     }
 }
 
@@ -321,6 +375,14 @@ function addSaturday() {
         top.appendChild(info_top) 
 
         courseEntries.appendChild(top)
+
+        avail_list[0] = 0;
+        avail_list[1] = 0;
+        avail_list[2] = 0;
+        avail_list[3] = 0;
+        avail_list[4] = 0;
+        avail_list[5] = 0;
+        avail_list[6] = 0;
     }
 }
 
@@ -354,6 +416,14 @@ function addSunday() {
         top.appendChild(info_top) 
 
         courseEntries.appendChild(top)
+
+        avail_list[0] = -1;
+        avail_list[1] = 0;
+        avail_list[2] = 0;
+        avail_list[3] = 0;
+        avail_list[4] = 0;
+        avail_list[5] = 0;
+        avail_list[6] = 0;
     }
 }
 
