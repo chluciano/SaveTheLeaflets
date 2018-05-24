@@ -4,62 +4,88 @@ var avail_list = [0, 0, 0, 0, 0, 0, 0];
 
 var monList = [["1. History 255",
 				"2. History 255",
-				"3. History 301"],
-               ["Something about textbook",
-			   "Something about textbook",
-			   "Something about textbook"]];
+				"3. History 301",
+                "4. History 201"],
+               ["$23",
+			   "$24",
+			   "$24",
+               "$32"],
+               ["Kofi",
+               "Christian",
+               "Leeks",
+               "Coffee"],
+               [1,2,3,4]
+               ];
 			   
-var tuesList = [["1. History 250",
-				 "2. History 260",
-				 "3. History 301"],
-               ["Something about textbook",
-				"Something about textbook",
-				"Something about textbook"]];
+var tuesList = [["1. History 255",
+                "2. History 255",
+                ],
+               ["$23",
+               "$24",
+               ],
+               ["Kofi",
+               "Christian",
+               ],
+               [2,3,]
+               ];
 				
-var wedList = [["1. History 260",
-				"2. History 260"],
-               ["Something about textbook",
-			   "Something about textbook"]];
+var wedList = [["1. History 255",
+                "2. History 255",
+                "3. History 301"],
+               ["$23",
+               "$24",
+               "$24"],
+               ["Kofi",
+               "Kofi",
+               "Kofi"],
+               [3,4,5]
+               ];
 			   
 var thursList = [[],
                []];
 			   
-var friList = [["1. History 250",
-				"2. History 250",
-				"3. History 250",
-				"4. History 260",
-				"5. History 260",
-				"6. History 301"],
-               ["Something about textbook",
-			   "Something about textbook",
-			   "Something about textbook",
-			   "Something about textbook",
-			   "Something about textbook",
-			   "Something about textbook"]];
+var friList = [["1. History 255",
+                "2. History 255",
+                "3. History 301",
+                "4. History 255",
+                "5. History 301"
+                ],
+               ["$23",
+               "$24",
+               "$24",
+               "$24",
+               "$24"],
+               ["Kofi",
+               "Christian",
+               "Leeks",
+               "Santa",
+               "Kira"],
+               [1,1,1,1,4]
+               ];
 			   
-var satList = [["1. History 260",
-				"2. History 260",
-				"3. History 301",
-				"4. History 301",
-				"5. History 301"],
-               ["Something about textbook",
-			   "Something about textbook",
-			   "Something about textbook",
-			   "Something about textbook",
-			   "Something about textbook"]];
+var satList = [["1. History 255",
+                "2. History 255",
+                "3. History 301"],
+               ["$23",
+               "$24",
+               "$24"],
+               ["Kofi",
+               "Kofi",
+               "Kofi"],
+               [3,4,2]
+               ];
 			   
-var sunList = [["1. History 250",
-				"2. History 250",
-				"3. History 250",
-				"4. History 250",
-				"5. History 250",
-				"6. History 250"],
-               ["Something about textbook",
-			   "Something about textbook",
-			   "Something about textbook",
-			   "Something about textbook",
-			   "Something about textbook",
-			   "Something about textbook"]];
+var sunList = [["1. History 255",
+                "2. History 255",
+                "3. History 301"],
+               ["$23",
+               "$24",
+               "$24"],
+               ["Kofi",
+               "Kofi",
+               "Kofi"],
+               [3,4,2]
+               ];
 
 var day_num;
 
@@ -148,29 +174,73 @@ function addMonday() {
         var top = document.createElement("div")
         top.className = "row findGroupEntry"
 
-        var title = document.createElement("p");
-		title.className ="headerText";
-        title.innerHTML = monList[0][i];
+        var dataTable = document.createElement("div");
+        dataTable.className = "dataTable";
+        top.appendChild(dataTable);
+
+        var dataTableRow = document.createElement("div");
+        dataTableRow.className = "dataTable-row";
+        dataTable.appendChild(dataTableRow);
+
+        var bookName = document.createElement("p");
+        bookName.innerHTML = monList[0][i];
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
         a.setAttribute('onclick',"storeDay()");
-        a.appendChild(title);
+        a.appendChild(bookName);
+        dataTableRow.appendChild(bookName);
 
-        var name = document.createElement("div")
-        name.className = "col-5 text-center"
-        name.appendChild(a)
-        top.appendChild(name) 
+        var bookOwner = document.createElement("p");
+        bookOwner.innerHTML = monList[1][i];
+        dataTableRow.appendChild(bookOwner);
 
-        var info = document.createElement("p");
-		info.className = "bodyText";
-        info.innerHTML = monList[1][i];
 
-        var info_top = document.createElement("div")
-        info_top.className = "col-7"
-        info_top.appendChild(info)
-        top.appendChild(info_top) 
+        var dataTableRow2 = document.createElement("div");
+        dataTableRow2.className = "dataTable-row";
+        dataTable.appendChild(dataTableRow2);
 
-        courseEntries.appendChild(top)
+        var bookPrice = document.createElement("p");
+        bookPrice.innerHTML = monList[2][i];
+        dataTableRow2.appendChild(bookPrice);
+
+        var elfHatRankings = document.createElement("div");
+        elfHatRankings.className = "elf-hat-rankings";
+        dataTableRow2.appendChild(elfHatRankings);
+
+
+        for (j = 0; j<monList[3][i]; j++){
+            var elfHat = document.createElement("img");
+            elfHat.setAttribute('src', '../images/elf_hat.svg');
+            elfHat.className = "elf_hat"
+            elfHatRankings.appendChild(elfHat);
+        }
+
+        courseEntries.appendChild(top);
+
+
+  //       var title = document.createElement("p");
+		// title.className ="headerText";
+  //       title.innerHTML = monList[0][i];
+  //       var a = document.createElement("a");
+  //       a.setAttribute('href',"selectBook.html");
+  //       a.setAttribute('onclick',"storeDay()");
+  //       a.appendChild(title);
+
+  //       var name = document.createElement("div")
+  //       name.className = "col-5 text-center"
+  //       name.appendChild(a)
+  //       top.appendChild(name) 
+
+  //       var info = document.createElement("p");
+		// info.className = "bodyText";
+  //       info.innerHTML = monList[1][i];
+
+  //       var info_top = document.createElement("div")
+  //       info_top.className = "col-7"
+  //       info_top.appendChild(info)
+  //       top.appendChild(info_top) 
+
+  //       courseEntries.appendChild(top)
 
         avail_list[0] = 0;
         avail_list[1] = -1;
@@ -189,29 +259,77 @@ function addTuesday() {
         var top = document.createElement("div")
         top.className = "row findGroupEntry"
 
-        var title = document.createElement("p");
-        title.innerHTML = tuesList[0][i];
-		title.className ="headerText";
+        var dataTable = document.createElement("div");
+        dataTable.className = "dataTable";
+        top.appendChild(dataTable);
+
+        var dataTableRow = document.createElement("div");
+        dataTableRow.className = "dataTable-row";
+        dataTable.appendChild(dataTableRow);
+
+        var bookName = document.createElement("p");
+        bookName.innerHTML = tuesList[0][i];
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
         a.setAttribute('onclick',"storeDay()");
-        a.appendChild(title);
+        a.appendChild(bookName);
+        dataTableRow.appendChild(bookName);
 
-        var name = document.createElement("div")
-        name.className = "col-5 text-center"
-        name.appendChild(a)
-        top.appendChild(name) 
+        var bookOwner = document.createElement("p");
+        bookOwner.innerHTML = tuesList[1][i];
+        dataTableRow.appendChild(bookOwner);
 
-        var info = document.createElement("p");
-		info.className ="bodyText";
-        info.innerHTML = tuesList[1][i];
 
-        var info_top = document.createElement("div")
-        info_top.className = "col-7"
-        info_top.appendChild(info)
-        top.appendChild(info_top) 
+        var dataTableRow2 = document.createElement("div");
+        dataTableRow2.className = "dataTable-row";
+        dataTable.appendChild(dataTableRow2);
 
-        courseEntries.appendChild(top)
+        var bookPrice = document.createElement("p");
+        bookPrice.innerHTML = tuesList[2][i];
+        dataTableRow2.appendChild(bookPrice);
+
+        var elfHatRankings = document.createElement("div");
+        elfHatRankings.className = "elf-hat-rankings";
+        dataTableRow2.appendChild(elfHatRankings);
+
+
+        for (j = 0; j<tuesList[3][i]; j++){
+            var elfHat = document.createElement("img");
+            elfHat.setAttribute('src', '../images/elf_hat.svg');
+            elfHat.className = "elf_hat"
+            elfHatRankings.appendChild(elfHat);
+        }
+
+        courseEntries.appendChild(top);
+//     var courseEntries = document.getElementsByClassName("findCourseEntries")[0];
+
+//     for (i = 0; i < tuesList[0].length; i++){
+//         var top = document.createElement("div")
+//         top.className = "row findGroupEntry"
+
+//         var title = document.createElement("p");
+//         title.innerHTML = tuesList[0][i];
+// 		title.className ="headerText";
+//         var a = document.createElement("a");
+//         a.setAttribute('href',"selectBook.html");
+//         a.setAttribute('onclick',"storeDay()");
+//         a.appendChild(title);
+
+//         var name = document.createElement("div")
+//         name.className = "col-5 text-center"
+//         name.appendChild(a)
+//         top.appendChild(name) 
+
+//         var info = document.createElement("p");
+// 		info.className ="bodyText";
+//         info.innerHTML = tuesList[1][i];
+
+//         var info_top = document.createElement("div")
+//         info_top.className = "col-7"
+//         info_top.appendChild(info)
+//         top.appendChild(info_top) 
+
+//         courseEntries.appendChild(top)
 
         avail_list[0] = 0;
         avail_list[1] = 0;
@@ -230,29 +348,77 @@ function addWednesday() {
         var top = document.createElement("div")
         top.className = "row findGroupEntry"
 
-        var title = document.createElement("p");
-		title.className ="headerText";
-        title.innerHTML = wedList[0][i];
+        var dataTable = document.createElement("div");
+        dataTable.className = "dataTable";
+        top.appendChild(dataTable);
+
+        var dataTableRow = document.createElement("div");
+        dataTableRow.className = "dataTable-row";
+        dataTable.appendChild(dataTableRow);
+
+        var bookName = document.createElement("p");
+        bookName.innerHTML = wedList[0][i];
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
         a.setAttribute('onclick',"storeDay()");
-        a.appendChild(title);
+        a.appendChild(bookName);
+        dataTableRow.appendChild(bookName);
 
-        var name = document.createElement("div")
-        name.className = "col-5 text-center"
-        name.appendChild(a)
-        top.appendChild(name) 
+        var bookOwner = document.createElement("p");
+        bookOwner.innerHTML = wedList[1][i];
+        dataTableRow.appendChild(bookOwner);
 
-        var info = document.createElement("p");
-		info.className = "bodyText"
-        info.innerHTML = wedList[1][i];
 
-        var info_top = document.createElement("div")
-        info_top.className = "col-7"
-        info_top.appendChild(info)
-        top.appendChild(info_top) 
+        var dataTableRow2 = document.createElement("div");
+        dataTableRow2.className = "dataTable-row";
+        dataTable.appendChild(dataTableRow2);
 
-        courseEntries.appendChild(top)
+        var bookPrice = document.createElement("p");
+        bookPrice.innerHTML = wedList[2][i];
+        dataTableRow2.appendChild(bookPrice);
+
+        var elfHatRankings = document.createElement("div");
+        elfHatRankings.className = "elf-hat-rankings";
+        dataTableRow2.appendChild(elfHatRankings);
+
+
+        for (j = 0; j<wedList[3][i]; j++){
+            var elfHat = document.createElement("img");
+            elfHat.setAttribute('src', '../images/elf_hat.svg');
+            elfHat.className = "elf_hat"
+            elfHatRankings.appendChild(elfHat);
+        }
+
+        courseEntries.appendChild(top);
+//     var courseEntries = document.getElementsByClassName("findCourseEntries")[0];
+
+//     for (i = 0; i < wedList[0].length; i++){
+//         var top = document.createElement("div")
+//         top.className = "row findGroupEntry"
+
+//         var title = document.createElement("p");
+// 		title.className ="headerText";
+//         title.innerHTML = wedList[0][i];
+//         var a = document.createElement("a");
+//         a.setAttribute('href',"selectBook.html");
+//         a.setAttribute('onclick',"storeDay()");
+//         a.appendChild(title);
+
+//         var name = document.createElement("div")
+//         name.className = "col-5 text-center"
+//         name.appendChild(a)
+//         top.appendChild(name) 
+
+//         var info = document.createElement("p");
+// 		info.className = "bodyText"
+//         info.innerHTML = wedList[1][i];
+
+//         var info_top = document.createElement("div")
+//         info_top.className = "col-7"
+//         info_top.appendChild(info)
+//         top.appendChild(info_top) 
+
+//         courseEntries.appendChild(top)
 
 
         avail_list[0] = -1;
@@ -272,29 +438,77 @@ function addThursday() {
         var top = document.createElement("div")
         top.className = "row findGroupEntry"
 
-        var title = document.createElement("p");
-		title.className ="headerText";
-        title.innerHTML = thursList[0][i];
+        var dataTable = document.createElement("div");
+        dataTable.className = "dataTable";
+        top.appendChild(dataTable);
+
+        var dataTableRow = document.createElement("div");
+        dataTableRow.className = "dataTable-row";
+        dataTable.appendChild(dataTableRow);
+
+        var bookName = document.createElement("p");
+        bookName.innerHTML = thursList[0][i];
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
         a.setAttribute('onclick',"storeDay()");
-        a.appendChild(title);
+        a.appendChild(bookName);
+        dataTableRow.appendChild(bookName);
 
-        var name = document.createElement("div")
-        name.className = "col-5 text-center"
-        name.appendChild(a)
-        top.appendChild(name) 
+        var bookOwner = document.createElement("p");
+        bookOwner.innerHTML = thursList[1][i];
+        dataTableRow.appendChild(bookOwner);
 
-        var info = document.createElement("p");
-		info.className = "bodyText"
-        info.innerHTML = thursList[1][i];
 
-        var info_top = document.createElement("div")
-        info_top.className = "col-7"
-        info_top.appendChild(info)
-        top.appendChild(info_top) 
+        var dataTableRow2 = document.createElement("div");
+        dataTableRow2.className = "dataTable-row";
+        dataTable.appendChild(dataTableRow2);
 
-        courseEntries.appendChild(top)
+        var bookPrice = document.createElement("p");
+        bookPrice.innerHTML = thursList[2][i];
+        dataTableRow2.appendChild(bookPrice);
+
+        var elfHatRankings = document.createElement("div");
+        elfHatRankings.className = "elf-hat-rankings";
+        dataTableRow2.appendChild(elfHatRankings);
+
+
+        for (j = 0; j<thursList[3][i]; j++){
+            var elfHat = document.createElement("img");
+            elfHat.setAttribute('src', '../images/elf_hat.svg');
+            elfHat.className = "elf_hat"
+            elfHatRankings.appendChild(elfHat);
+        }
+
+        courseEntries.appendChild(top);
+//     var courseEntries = document.getElementsByClassName("findCourseEntries")[0];
+
+//     for (i = 0; i < thursList[0].length; i++){
+//         var top = document.createElement("div")
+//         top.className = "row findGroupEntry"
+
+//         var title = document.createElement("p");
+// 		title.className ="headerText";
+//         title.innerHTML = thursList[0][i];
+//         var a = document.createElement("a");
+//         a.setAttribute('href',"selectBook.html");
+//         a.setAttribute('onclick',"storeDay()");
+//         a.appendChild(title);
+
+//         var name = document.createElement("div")
+//         name.className = "col-5 text-center"
+//         name.appendChild(a)
+//         top.appendChild(name) 
+
+//         var info = document.createElement("p");
+// 		info.className = "bodyText"
+//         info.innerHTML = thursList[1][i];
+
+//         var info_top = document.createElement("div")
+//         info_top.className = "col-7"
+//         info_top.appendChild(info)
+//         top.appendChild(info_top) 
+
+//         courseEntries.appendChild(top)
 
         avail_list[0] = -1;
         avail_list[1] = -1;
@@ -313,29 +527,77 @@ function addFriday() {
         var top = document.createElement("div")
         top.className = "row findGroupEntry"
 
-        var title = document.createElement("p");
-		title.className ="headerText";
-        title.innerHTML = friList[0][i];
+        var dataTable = document.createElement("div");
+        dataTable.className = "dataTable";
+        top.appendChild(dataTable);
+
+        var dataTableRow = document.createElement("div");
+        dataTableRow.className = "dataTable-row";
+        dataTable.appendChild(dataTableRow);
+
+        var bookName = document.createElement("p");
+        bookName.innerHTML = friList[0][i];
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
         a.setAttribute('onclick',"storeDay()");
-        a.appendChild(title);
+        a.appendChild(bookName);
+        dataTableRow.appendChild(bookName);
 
-        var name = document.createElement("div")
-        name.className = "col-5 text-center"
-        name.appendChild(a)
-        top.appendChild(name) 
+        var bookOwner = document.createElement("p");
+        bookOwner.innerHTML = friList[1][i];
+        dataTableRow.appendChild(bookOwner);
 
-        var info = document.createElement("p");
-		info.className = "bodyText";
-        info.innerHTML = friList[1][i];
 
-        var info_top = document.createElement("div")
-        info_top.className = "col-7"
-        info_top.appendChild(info)
-        top.appendChild(info_top) 
+        var dataTableRow2 = document.createElement("div");
+        dataTableRow2.className = "dataTable-row";
+        dataTable.appendChild(dataTableRow2);
 
-        courseEntries.appendChild(top)
+        var bookPrice = document.createElement("p");
+        bookPrice.innerHTML = friList[2][i];
+        dataTableRow2.appendChild(bookPrice);
+
+        var elfHatRankings = document.createElement("div");
+        elfHatRankings.className = "elf-hat-rankings";
+        dataTableRow2.appendChild(elfHatRankings);
+
+
+        for (j = 0; j<friList[3][i]; j++){
+            var elfHat = document.createElement("img");
+            elfHat.setAttribute('src', '../images/elf_hat.svg');
+            elfHat.className = "elf_hat"
+            elfHatRankings.appendChild(elfHat);
+        }
+
+        courseEntries.appendChild(top);
+//     var courseEntries = document.getElementsByClassName("findCourseEntries")[0];
+
+//     for (i = 0; i < friList[0].length; i++){
+//         var top = document.createElement("div")
+//         top.className = "row findGroupEntry"
+
+//         var title = document.createElement("p");
+// 		title.className ="headerText";
+//         title.innerHTML = friList[0][i];
+//         var a = document.createElement("a");
+//         a.setAttribute('href',"selectBook.html");
+//         a.setAttribute('onclick',"storeDay()");
+//         a.appendChild(title);
+
+//         var name = document.createElement("div")
+//         name.className = "col-5 text-center"
+//         name.appendChild(a)
+//         top.appendChild(name) 
+
+//         var info = document.createElement("p");
+// 		info.className = "bodyText";
+//         info.innerHTML = friList[1][i];
+
+//         var info_top = document.createElement("div")
+//         info_top.className = "col-7"
+//         info_top.appendChild(info)
+//         top.appendChild(info_top) 
+
+//         courseEntries.appendChild(top)
 
         avail_list[0] = -1;
         avail_list[1] = 0;
@@ -354,29 +616,77 @@ function addSaturday() {
         var top = document.createElement("div")
         top.className = "row findGroupEntry"
 
-        var title = document.createElement("p");
-		title.className ="headerText";
-        title.innerHTML = satList[0][i];
+        var dataTable = document.createElement("div");
+        dataTable.className = "dataTable";
+        top.appendChild(dataTable);
+
+        var dataTableRow = document.createElement("div");
+        dataTableRow.className = "dataTable-row";
+        dataTable.appendChild(dataTableRow);
+
+        var bookName = document.createElement("p");
+        bookName.innerHTML = satList[0][i];
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
         a.setAttribute('onclick',"storeDay()");
-        a.appendChild(title);
+        a.appendChild(bookName);
+        dataTableRow.appendChild(bookName);
 
-        var name = document.createElement("div")
-        name.className = "col-5 text-center"
-        name.appendChild(a)
-        top.appendChild(name) 
+        var bookOwner = document.createElement("p");
+        bookOwner.innerHTML = satList[1][i];
+        dataTableRow.appendChild(bookOwner);
 
-        var info = document.createElement("p");
-		info.className = "bodyText";
-        info.innerHTML = satList[1][i];
 
-        var info_top = document.createElement("div")
-        info_top.className = "col-7"
-        info_top.appendChild(info)
-        top.appendChild(info_top) 
+        var dataTableRow2 = document.createElement("div");
+        dataTableRow2.className = "dataTable-row";
+        dataTable.appendChild(dataTableRow2);
 
-        courseEntries.appendChild(top)
+        var bookPrice = document.createElement("p");
+        bookPrice.innerHTML = satList[2][i];
+        dataTableRow2.appendChild(bookPrice);
+
+        var elfHatRankings = document.createElement("div");
+        elfHatRankings.className = "elf-hat-rankings";
+        dataTableRow2.appendChild(elfHatRankings);
+
+
+        for (j = 0; j<satList[3][i]; j++){
+            var elfHat = document.createElement("img");
+            elfHat.setAttribute('src', '../images/elf_hat.svg');
+            elfHat.className = "elf_hat"
+            elfHatRankings.appendChild(elfHat);
+        }
+
+        courseEntries.appendChild(top);
+//     var courseEntries = document.getElementsByClassName("findCourseEntries")[0];
+
+//     for (i = 0; i < satList[0].length; i++){
+//         var top = document.createElement("div")
+//         top.className = "row findGroupEntry"
+
+//         var title = document.createElement("p");
+// 		title.className ="headerText";
+//         title.innerHTML = satList[0][i];
+//         var a = document.createElement("a");
+//         a.setAttribute('href',"selectBook.html");
+//         a.setAttribute('onclick',"storeDay()");
+//         a.appendChild(title);
+
+//         var name = document.createElement("div")
+//         name.className = "col-5 text-center"
+//         name.appendChild(a)
+//         top.appendChild(name) 
+
+//         var info = document.createElement("p");
+// 		info.className = "bodyText";
+//         info.innerHTML = satList[1][i];
+
+//         var info_top = document.createElement("div")
+//         info_top.className = "col-7"
+//         info_top.appendChild(info)
+//         top.appendChild(info_top) 
+
+//         courseEntries.appendChild(top)
 
         avail_list[0] = 0;
         avail_list[1] = 0;
@@ -395,29 +705,77 @@ function addSunday() {
         var top = document.createElement("div")
         top.className = "row findGroupEntry"
 
-        var title = document.createElement("p");
-		title.className ="headerText";
-        title.innerHTML = sunList[0][i];
+        var dataTable = document.createElement("div");
+        dataTable.className = "dataTable";
+        top.appendChild(dataTable);
+
+        var dataTableRow = document.createElement("div");
+        dataTableRow.className = "dataTable-row";
+        dataTable.appendChild(dataTableRow);
+
+        var bookName = document.createElement("p");
+        bookName.innerHTML = sunList[0][i];
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
         a.setAttribute('onclick',"storeDay()");
-        a.appendChild(title);
+        a.appendChild(bookName);
+        dataTableRow.appendChild(bookName);
 
-        var name = document.createElement("div")
-        name.className = "col-5 text-center"
-        name.appendChild(a)
-        top.appendChild(name) 
+        var bookOwner = document.createElement("p");
+        bookOwner.innerHTML = sunList[1][i];
+        dataTableRow.appendChild(bookOwner);
 
-        var info = document.createElement("p");
-		info.className = "bodyText";
-        info.innerHTML = sunList[1][i];
 
-        var info_top = document.createElement("div")
-        info_top.className = "col-7"
-        info_top.appendChild(info)
-        top.appendChild(info_top) 
+        var dataTableRow2 = document.createElement("div");
+        dataTableRow2.className = "dataTable-row";
+        dataTable.appendChild(dataTableRow2);
 
-        courseEntries.appendChild(top)
+        var bookPrice = document.createElement("p");
+        bookPrice.innerHTML = sunList[2][i];
+        dataTableRow2.appendChild(bookPrice);
+
+        var elfHatRankings = document.createElement("div");
+        elfHatRankings.className = "elf-hat-rankings";
+        dataTableRow2.appendChild(elfHatRankings);
+
+
+        for (j = 0; j<sunList[3][i]; j++){
+            var elfHat = document.createElement("img");
+            elfHat.setAttribute('src', '../images/elf_hat.svg');
+            elfHat.className = "elf_hat"
+            elfHatRankings.appendChild(elfHat);
+        }
+
+        courseEntries.appendChild(top);
+//     var courseEntries = document.getElementsByClassName("findCourseEntries")[0];
+
+//     for (i = 0; i < sunList[0].length; i++){
+//         var top = document.createElement("div")
+//         top.className = "row findGroupEntry"
+
+//         var title = document.createElement("p");
+// 		title.className ="headerText";
+//         title.innerHTML = sunList[0][i];
+//         var a = document.createElement("a");
+//         a.setAttribute('href',"selectBook.html");
+//         a.setAttribute('onclick',"storeDay()");
+//         a.appendChild(title);
+
+//         var name = document.createElement("div")
+//         name.className = "col-5 text-center"
+//         name.appendChild(a)
+//         top.appendChild(name) 
+
+//         var info = document.createElement("p");
+// 		info.className = "bodyText";
+//         info.innerHTML = sunList[1][i];
+
+//         var info_top = document.createElement("div")
+//         info_top.className = "col-7"
+//         info_top.appendChild(info)
+//         top.appendChild(info_top) 
+
+//         courseEntries.appendChild(top)
 
         avail_list[0] = -1;
         avail_list[1] = 0;

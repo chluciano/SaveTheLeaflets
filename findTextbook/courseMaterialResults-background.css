@@ -18,10 +18,12 @@ body {
 
 #dayOfWeek {
 	font-family: 'Josefin Sans', sans-serif;
-	text-align: center;
-	margin-bottom: 0px;
-	float: left;
-	width: 180px;
+	font-weight: 900;
+	margin: 50px 30px 0px 0px;
+	font-size: 20px;
+	float: right;
+	
+
 }
 
 .navWeek-instructions{
@@ -33,7 +35,7 @@ body {
 }
 
 .navWeek {
-	width: 10px;
+	width: 40px;
 	height: 180px;
 	margin: 0px;
 	padding: 0px;
@@ -53,11 +55,12 @@ body {
 }
 
 #button-info {
-	margin: 0px;
+	margin-left: 20px;
 	padding: 40px 20px 0px 20px;
 	width: 180px;
 	font-size: 10pt;
 	line-height: 1.0;
+	font-weight: bold;
 }
 
 #button-to-sharing {
@@ -69,24 +72,25 @@ body {
 
 /***************************************************************************************************/
 /*courseMaterialResult*/
-.middle-results {
-	display: inline-block;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	height: 50%;
-	width: 290px;
-	position: relative;
-	padding-bottom: 0px;
-}
+
 
 
 #leftbutton {
 	padding: 0px;
 	margin: 0px;
-	height: 180px;'
-	width: 20px;
+	height: 200px ;
+	width: 40px;
 	float: left;
+	align-items: none;
+
+}
+
+#rightbutton {
+	padding: 0px;
+	margin: 0px;
+	height: 200px ;
+	width: 40px;
+	float: right;
 	align-items: none;
 }
 
@@ -99,10 +103,10 @@ body {
 	align-items: center;
 	display: flex;
 	text-align: center;
+	justify-content: center;
 }
 
 .findCourseEntries{
-	float: left;
 	overflow: hidden;
 	overflow-y: scroll;
 	height: 250px;
@@ -110,6 +114,16 @@ body {
 	width: 280px;
 	padding: 0px;
 	margin-top: 8%;
+	margin-left: 2.5px !important;
+	z-index: 1;
+}
+
+.findGroupEntry{
+	width: 240px;
+	z-index: 1;
+
+
+
 }
 
 .left-arrow{
@@ -174,3 +188,6 @@ body {
 
 }
 
+.swipe-text{
+	font-size: 14px;
+}
