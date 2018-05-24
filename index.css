@@ -135,7 +135,6 @@ html{
 
 }
 
-
 .header-row-top{
 	height:20px;
 	width: 100%;
@@ -152,6 +151,7 @@ html{
 	width: 100%;
 	font-size: 18pt;
 	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 
