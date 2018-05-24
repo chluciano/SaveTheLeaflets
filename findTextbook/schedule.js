@@ -24,7 +24,7 @@ function init() {
     var mon_avail = parseInt(localStorage.getItem("monAvail"));
     var tues_avail = parseInt(localStorage.getItem("tuesAvail"));
     var wed_avail = parseInt(localStorage.getItem("wedAvail"));
-        var thirs_avail = parseInt(localStorage.getItem("wedAvail"));
+    var thirs_avail = parseInt(localStorage.getItem("wedAvail"));
 
     day_num = parseInt(localStorage.getItem("curDay"));
     dayOfWeek.innerHTML = dayList[day_num];

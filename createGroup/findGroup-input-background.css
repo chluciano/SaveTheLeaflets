@@ -2,3 +2,31 @@ body {
     background-image: url("../images/SharingGroup.jpg");
     background-repeat: no-repeat;
 }
+
+.search {
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 2.5%;
+}
+.middle-results {
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 50%;
+	width: 290px;
+	position: relative;
+	padding-bottom: 0px;
+}
+
+.middle-results {
+	width: 300px;
+	height: 250px;
+	padding: 0px;
+	margin-top: 40px;
+	/*float: left;*/
+	align-items: center;
+	display: flex;
+	text-align: center;
+	border: 1px solid red;
+}
