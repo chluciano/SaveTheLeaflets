@@ -77,14 +77,14 @@ body {
 	text-align: center;
 }
 
-.group-listing{
+/*.group-listing{
 	padding-left: 15px;
 	width: 300px;
 	background-color: rgba(239, 241, 243, .6);
 	justify-content: left;
 	align-items: left;
 	text-align: left;
-}
+}*/
 
 .group-members{
 	padding-top: 0px;
@@ -109,4 +109,16 @@ body {
 	padding-top: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
+}
+
+.share-confirmation{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url("../images/WoodLight.png");
+}
+
+.group-listing{ /* used to lower the text to fit the 'open drawer' graphic in active tabs */
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url("../images/WoodLight.png");
 }
