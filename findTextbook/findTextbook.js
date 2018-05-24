@@ -66,7 +66,7 @@ var day_num;
 
 function init() {
 	// Your code goes here
-    day_num = 0;
+    day_num = parseInt(localStorage.getItem("curDay"));//0;
     avail_list[0] = 0;
     avail_list[1] = -1;
     avail_list[2] = 0;
@@ -74,7 +74,9 @@ function init() {
     avail_list[4] = 0;
     avail_list[5] = 0;
     avail_list[6] = 0;
-
+    var dayOfWeek = document.getElementById("dayOfWeek");
+    dayOfWeek.innerHTML = dayList[day_num];
+    refreshDay()
 };
 
 function rightDay() {
