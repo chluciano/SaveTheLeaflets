@@ -1,5 +1,5 @@
 // Create your global variables below:
-var dayList = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+var dayList = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
 var avail_list = [0, 0, 0, 0, 0, 0, 0];
 
 var monList = [["1. History 255",
