@@ -2,13 +2,13 @@
 function storeLink() {
     localStorage.setItem("changeScheduleLink","../addTextbook/bookConfirm.html")
 
-    var mon = sharedDay(localStorage.getItem("profileShareMon"));
-    var tues = sharedDay(localStorage.getItem("profileShareTues"));
-    var wed = sharedDay(localStorage.getItem("profileShareWed"));
-    var thurs = sharedDay(localStorage.getItem("profileShareThurs"));
-    var fri = sharedDay(localStorage.getItem("profileShareFri"));
-    var sat = sharedDay(localStorage.getItem("profileShareSat"));
-    var sun = sharedDay(localStorage.getItem("profileShareSun"));    
+    var mon = checkNull(localStorage.getItem("profileShareMon"));
+    var tues = checkNull(localStorage.getItem("profileShareTues"));
+    var wed = checkNull(localStorage.getItem("profileShareWed"));
+    var thurs = checkNull(localStorage.getItem("profileShareThurs"));
+    var fri = checkNull(localStorage.getItem("profileShareFri"));
+    var sat = checkNull(localStorage.getItem("profileShareSat"));
+    var sun = checkNull(localStorage.getItem("profileShareSun"));    
     localStorage.setItem("monAvail",mon)
     localStorage.setItem("tuesAvail",tues)
     localStorage.setItem("wedAvail",wed)
@@ -16,6 +16,7 @@ function storeLink() {
     localStorage.setItem("friAvail",fri)
     localStorage.setItem("satAvail",sat)
     localStorage.setItem("sunAvail",sun)
+    localStorage.setItem("curDay",0)
 }
 
 function checkNull(sharedDay){
