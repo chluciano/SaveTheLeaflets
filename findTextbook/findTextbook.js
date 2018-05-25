@@ -165,7 +165,7 @@ function storeDay(el) {
     localStorage.setItem("satAvail",avail_list[5])
     localStorage.setItem("sunAvail",avail_list[6])
 
-    var linkData = el.getElementsByClassName()
+    //var linkData = el.getElementsByClassName()
 }
 
 
@@ -732,10 +732,6 @@ function addSunday() {
 
         var bookName = document.createElement("p");
         bookName.innerHTML = sunList[0][i];
-        var a = document.createElement("a");
-        a.setAttribute('href',"selectBook.html");
-        a.setAttribute('onclick',"storeDay()");
-        a.appendChild(bookName);
         dataTableRow.appendChild(bookName);
 
         var bookOwner = document.createElement("p");
