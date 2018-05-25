@@ -155,7 +155,7 @@ function refreshDay() {
     }
 }
 
-function storeDay() {
+function storeDay(el) {
     localStorage.setItem("curDay",day_num)
     localStorage.setItem("monAvail",avail_list[0])
     localStorage.setItem("tuesAvail",avail_list[1])
@@ -163,7 +163,9 @@ function storeDay() {
     localStorage.setItem("thursAvail",avail_list[3])
     localStorage.setItem("friAvail",avail_list[4])
     localStorage.setItem("satAvail",avail_list[5])
-    localStorage.setItem("sunAvail",avail_list[6])    
+    localStorage.setItem("sunAvail",avail_list[6])
+
+    var linkData = el.getElementsByClassName()
 }
 
 
@@ -177,7 +179,7 @@ function addMonday() {
         var dataTable = document.createElement("div");
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
-        a.setAttribute('onclick',"storeDay()");
+        a.setAttribute('onclick',"storeDay(this)");
         dataTable.className = "dataTable";
         a.appendChild(dataTable)
         top.appendChild(a);
@@ -265,7 +267,7 @@ function addTuesday() {
         var dataTable = document.createElement("div");
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
-        a.setAttribute('onclick',"storeDay()");
+        a.setAttribute('onclick',"storeDay(this)");
         dataTable.className = "dataTable";
         a.appendChild(dataTable)
         top.appendChild(a);
@@ -354,7 +356,7 @@ function addWednesday() {
         var dataTable = document.createElement("div");
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
-        a.setAttribute('onclick',"storeDay()");
+        a.setAttribute('onclick',"storeDay(this)");
         dataTable.className = "dataTable";
         a.appendChild(dataTable)
         top.appendChild(a);
@@ -444,7 +446,7 @@ function addThursday() {
         var dataTable = document.createElement("div");
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
-        a.setAttribute('onclick',"storeDay()");
+        a.setAttribute('onclick',"storeDay(this)");
         dataTable.className = "dataTable";
         a.appendChild(dataTable)
         top.appendChild(a);
@@ -533,7 +535,7 @@ function addFriday() {
         var dataTable = document.createElement("div");
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
-        a.setAttribute('onclick',"storeDay()");
+        a.setAttribute('onclick',"storeDay(this)");
         dataTable.className = "dataTable";
         a.appendChild(dataTable)
         top.appendChild(a);
@@ -639,7 +641,7 @@ function addSaturday() {
         bookName.innerHTML = satList[0][i];
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
-        a.setAttribute('onclick',"storeDay()");
+        a.setAttribute('onclick',"storeDay(this)");
         a.appendChild(bookName);
         dataTableRow.appendChild(bookName);
 
@@ -719,7 +721,7 @@ function addSunday() {
         var dataTable = document.createElement("div");
         var a = document.createElement("a");
         a.setAttribute('href',"selectBook.html");
-        a.setAttribute('onclick',"storeDay()");
+        a.setAttribute('onclick',"storeDay(this)");
         dataTable.className = "dataTable";
         a.appendChild(dataTable)
         top.appendChild(a);
