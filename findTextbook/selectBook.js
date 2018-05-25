@@ -38,5 +38,8 @@ function init() {
     document.getElementById("info").innerHTML = "Cost: 5<br>Rating: 3.8<br>Days Free: " + str_info       
 };
 
+function storeLink() {
+    localStorage.setItem("changeScheduleLink","../findTextbook/requested.html")
+}
 
 init();

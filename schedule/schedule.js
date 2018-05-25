@@ -79,8 +79,13 @@ function init() {
         }
     }        
 
+
     day_num = parseInt(localStorage.getItem("curDay"));
     dayOfWeek.innerHTML = dayList[day_num];
+
+    var change_link = localStorage.getItem("changeScheduleLink")
+    var link = document.getElementById("end-link")
+    link.setAttribute('href',change_link);
     updateDayHighlight()
 };
 

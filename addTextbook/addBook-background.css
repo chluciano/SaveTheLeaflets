@@ -2,3 +2,42 @@ body {
     background-image: url("../images/Library.jpg");
     background-repeat: no-repeat;
 }
+
+.form-container{
+    height: 60%;
+    width: 100%;
+    padding: 8px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* tried to resize the bootstrap buttons using this but did not work
+.form-group.form-section{
+    height: 15%;
+    width: 100%;
+    margin: 0px;
+    float: left;
+}
+
+.form-row.form-section{
+    height: 15%;
+    width: 100%;
+    margin: 0px;
+    float: left;
+}
+
+.form-section{
+    height: 15%;
+    width: 100%;
+    margin: 0px;
+    float: left;
+}*/
+
+.button-container{ /* for confirmation and cancel buttons */
+    height: 15%;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.form-control-sm{
+    width: 100%;
+}
