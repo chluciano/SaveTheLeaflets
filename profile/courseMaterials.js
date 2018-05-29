@@ -35,4 +35,8 @@ function changeBackground(book){
      }
 }
 
+function storeLink() {
+    localStorage.setItem("changeScheduleLink","../profile/lendBookScheduleUpdate.html")
+}
+
 init();
