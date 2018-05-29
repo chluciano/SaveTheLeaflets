@@ -8,6 +8,8 @@
    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
 </header>
    <body>
       <div id="screen"> 
@@ -46,7 +48,7 @@
          </div>
          <div class="middle-results-schedule">
            <div class="navWeek" onclick="leftDay()">
-              <button id="leftButton" type="button" class="btn btn-outline-primary"> < </button>
+              <button id="leftButton" type="button" class="btn btn-secondary"> <span class="swipe-text">Swipe</span> <br/> < </button>
            </div>
            <div class="scheduleOptions">
                <div id="am-times">
@@ -129,11 +131,9 @@
                </div>
             </div>
             <div class="navWeek" onclick="rightDay()">
-              <button id="leftButton" type="button" class="btn btn-outline-primary"> > </button>
-            </div>          
-         </div>
-
-
+              <button id="rightButton" type="button" class="btn btn-secondary"> <span class="swipe-text">Swipe</span>  <br/> ></button>
+           </div>
+         </div>          
          <div class="button-container"> 
             <a href="../requested.html" id="end-link" style="margin: 10px 20px" class="btn btn-primary btn-lg" role="button"> Schedule
             </a>

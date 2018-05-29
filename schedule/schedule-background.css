@@ -32,7 +32,7 @@ body {
     overflow-y: scroll;
     height: 260px;
     font-family: 'Josefin Sans', sans-serif;
-    width: 280px;
+    width: 220px;
     padding: 0px;
 }
 
@@ -40,20 +40,19 @@ body {
     float: left;
     text-align: center;
         align-items: center;
-    width: 130px;
+    width: 100px;
 }
 
 #pm-times{
     float: left;
     text-align: center;
     align-items: center;
-    width: 130px;
+    width: 100px;
 }
 
 .dayOfWeekHeader{
     height: 53px;
     padding-top: 0px;
-    float: top;
     text-align: center;
 }
 
@@ -65,7 +64,7 @@ body {
 
 .middle-results-schedule {
     width: 300px;
-    height: 257px;
+    height: 290px;
     padding: 0px;
     margin: 0px;
     /*float: left;*/
@@ -85,11 +84,17 @@ body {
 }
 
 .navWeek {
-    width: 10px;
+    /*width: 10px;
     height: 257px;
     margin: 0px;
     padding: 0px;
+    float: left;*/
+        width: 40px;
+    height: 180px;
+    margin: 0px;
+    padding: 0px;
     float: left;
+
 }
 
 #leftbutton {
@@ -115,4 +120,23 @@ body {
     justify-content: center;
     text-align: center;
     background-color: rgba(99, 164, 255, .2);
+}
+
+#leftbutton {
+    padding: 0px;
+    margin: 0px;
+    height: 200px ;
+    width: 40px;
+    float: left;
+    align-items: none;
+
+}
+
+#rightbutton {
+    padding: 0px;
+    margin: 0px;
+    height: 200px ;
+    width: 40px;
+    float: right;
+    align-items: none;
 }
