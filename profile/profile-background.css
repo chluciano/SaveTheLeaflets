@@ -3,31 +3,20 @@ body {
     background-repeat: no-repeat;
 }
 
-.middle-results{
-    width: 320px;
-    height: 350px;
+.shelf{ /* 4 containers that include top supports and shelf title */
+    width: 300px;
+    height: 94px;
     padding: 0px;
     margin: 0px;
-    /*float: left;*/
-    align-items: center;
-    display:; flex
-    text-align: center;
 }
 
-.schedule-header{
-    display: flex;
-    flex-direction: column;
-        justify-content: center;
+.shelfContent{ /* for zoom, link, highlighting */
+	width: 300px;
+	height: 80px;
+	float: right;
+	vertical-align: center;
+} 
 
-    height: 70px;
-    font-family: 'Josefin Sans', sans-serif, !important;
-    padding-bottom: 0px;
-}
-
-.day-click{
-    width: 160px;
-    height: 350px;
-    padding: 0px;
-    margin: 0px;
-    float: left;
-}
+.shelfLabel{ /* for shelf label */
+	
+} 
