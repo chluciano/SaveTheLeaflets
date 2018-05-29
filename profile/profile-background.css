@@ -3,11 +3,36 @@ body {
     background-repeat: no-repeat;
 }
 
-.shelf{ /* 4 containers that include top supports and shelf title */
+#profileShelf{ /* 4 containers that include top supports and shelf, title, contains 2  */
     width: 300px;
     height: 94px;
     padding: 0px;
     margin: 0px;
+	background-image: url("../images/3books.jpg"); /* change this for different number of books */
+}
+
+#borrowingShelf{ /* 4 containers that include top supports and shelf, title, contains 2  */
+    width: 300px;
+    height: 94px;
+    padding: 0px;
+    margin: 0px;
+	background-image: url("../images/3books.jpg"); /* change this for different number of books */
+}
+
+#profileShelf{ /* 4 containers that include top supports and shelf, title, contains 2  */
+    width: 300px;
+    height: 94px;
+    padding: 0px;
+    margin: 0px;
+	background-image: url("../images/3books.jpg"); /* change this for different number of books */
+}
+
+#readyToLendShelf{ /* 4 containers that include top supports and shelf, title, contains 2  */
+    width: 300px;
+    height: 94px;
+    padding: 0px;
+    margin: 0px;
+	background-image: url("../images/3books.jpg"); /* change this for different number of books */
 }
 
 .shelfContent{ /* for zoom, link, highlighting */
@@ -17,6 +42,6 @@ body {
 	vertical-align: center;
 } 
 
-.shelfLabel{ /* for shelf label */
+.shelfLabel{ /* for shelf labels */
 	
 } 
