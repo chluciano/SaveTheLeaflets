@@ -13,3 +13,32 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     background-image: url("../images/WoodLight.png");
 }
+
+#top-space{
+    height: 60px;
+    width: 300px;
+}
+
+#center-book-info{
+    height: 255px;
+    width: 300px;
+    text-align: center
+}
+
+.book-info{
+    height: 255px;
+    width: 80px;
+    text-align: left;
+    float: left;
+}
+
+.book-stop-left{
+    height: 255px;
+    width: 35px;
+    text-align: left;
+    float: left;
+}
+
+#bottom-space{
+    height: 5px;
+}
