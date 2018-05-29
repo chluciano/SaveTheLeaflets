@@ -87,6 +87,7 @@ function init() {
     var link = document.getElementById("end-link")
     link.setAttribute('href',change_link);
     updateDayHighlight()
+    updateColor()
 };
 
 
@@ -99,27 +100,28 @@ function checkColor(el) {
 
     if (id_name.includes('am')) {
         if(amState[day_num][num] == false) {
-            el.style.color = "#004ba0"
+            //el.style.color = "#004ba0"
             amState[day_num][num] = true
             dayCheckCount[day_num] = dayCheckCount[day_num] + 1;
 
         } else if (amState[day_num][num] == true) {
-            el.style.color = "#000000"
+            //el.style.color = "#000000"
             amState[day_num][num] = false
             dayCheckCount[day_num] = dayCheckCount[day_num] - 1;
         }
     } else {
         if(pmState[day_num][num] == false) {
-            el.style.color = "#004ba0"
+            //el.style.color = "#004ba0"
             pmState[day_num][num] = true
             dayCheckCount[day_num] = dayCheckCount[day_num] + 1;
         } else if (pmState[day_num][num] == true){
-            el.style.color = "#000000"
+            //el.style.color = "#000000"
             pmState[day_num][num] = false
             dayCheckCount[day_num] = dayCheckCount[day_num] - 1;
         }
     }
 
+    updateColor()
     updateDayHighlight()
 }
 
@@ -127,9 +129,11 @@ function updateColor() {
     var days = document.getElementsByClassName("schedule-tab-out")
     for (i=0; i < 12; i++){
         if (amState[day_num][i] == true) {
-            days[i].style.color = "#004ba0"
+            //days[i].style.color = "#004ba0"
+            days[i].style.backgroundColor = "#004ba0"
         } else /*if (amState[day_num][i] == 0)*/ {
-            days[i].style.color = "#000000"
+            //days[i].style.color = "#000000"
+            days[i].style.backgroundColor = "#b9987e"
         } /*else if (amState[day_num][i] == 2) {
             days[i].style.color = "#eeeeee"
         }*/
@@ -137,9 +141,12 @@ function updateColor() {
 
     for (i=12; i < 24; i++){
         if (pmState[day_num][i-12] == true) {
-            days[i].style.color = "#004ba0"
+            //days[i].style.color = "#004ba0"
+            days[i].style.backgroundColor = "#004ba0"
+            
         } else /*if (pmState[day_num][i] == 0)*/ {
-            days[i].style.color = "#000000"
+            //days[i].style.color = "#000000"
+            days[i].style.backgroundColor = "#b9987e"
         } /*else if (pmState[day_num][i] == 2) {
             days[i].style.color = "#eeeeee"
         }*/
