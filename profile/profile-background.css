@@ -3,20 +3,59 @@ body {
     background-repeat: no-repeat;
 }
 
-.shelf{ /* 4 containers that include top supports and shelf title */
+#profileShelf{ /* 4 containers that include top supports and shelf, title, contains 2  */
     width: 300px;
     height: 94px;
     padding: 0px;
     margin: 0px;
+	text-decoration: none;
+	background-image: url("../images/noBooks.jpg"); /* change this for different number of books */
+}
+
+#borrowingShelf{ /* 4 containers that include top supports and shelf, title, contains 2  */
+    width: 300px;
+    height: 94px;
+    padding: 0px;
+    margin: 0px;
+	text-decoration: none;
+	background-image: url("../images/3books.jpg"); /* change this for different number of books */
+}
+
+#lendingOutShelf{ /* 4 containers that include top supports and shelf, title, contains 2  */
+    width: 300px;
+    height: 94px;
+    padding: 0px;
+    margin: 0px;
+	text-decoration: none;
+	background-image: url("../images/2books.jpg"); /* change this for different number of books */
+}
+
+#readyToLendShelf{ /* 4 containers that include top supports and shelf, title, contains 2  */
+    width: 300px;
+    height: 94px;
+    padding: 0px;
+    margin: 0px;
+	background-image: url("../images/3books.jpg"); /* change this for different number of books */
 }
 
 .shelfContent{ /* for zoom, link, highlighting */
 	width: 300px;
-	height: 80px;
-	float: right;
-	vertical-align: center;
+	height: 75px;
+	margin: 0px;
+	padding: 0px;
+	text-align: right;
+	font-size: 50px;
+	line-height: 1.7;
+	text-decoration: none;
+	color: #004ba0;
+	padding-right: 5px;
 } 
 
-.shelfLabel{ /* for shelf label */
-	
+.shelfLabel{ /* for shelf labels */
+	width: 300px;
+	height: 19px;
+	margin: 0px;
+	padding: 0px;
+	font-size: 12pt;
+	text-align: center;
 } 

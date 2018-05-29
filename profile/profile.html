@@ -1,13 +1,13 @@
 <html>
 <header>
    <title>profileHome</title>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <link rel="stylesheet" type="text/css" href="../index.css"/>
    <link rel="stylesheet" type="text/css" href="profile-background.css"/>
       <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab">
    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </header>
    <body>
       <div id="screen"> 
@@ -22,7 +22,10 @@
                </div>
             </div>
          </div>
-         
+         <a href="editProfile.html" id="profileShelf" onmouseover="highlightShelf(this)" onmouseout="unhighlightShelf(this)">
+			<i class="material-icons shelfContent">zoom_in</i>
+			<h3 class="shelfLabel headerText">Profile</h3>
+		 </a>
          <div class="tab-bar">
             <div class="tab-button">
                <a href="../findTextbook/findTextbooks.html"><span class="link"></span></a>
