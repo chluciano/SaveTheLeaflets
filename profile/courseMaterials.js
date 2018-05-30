@@ -2,14 +2,17 @@
 
 function init() {
 	// Your code goes here
-     var borrow = localStorage.getItem("borrow");
+     var borrow = parseInt(localStorage.getItem("borrow"));
      var bookCountVar = "yourBookCount"
      var defaultBooks = 2
-     if (borrow == 'true') {
+     if (borrow == 1) {
           bookCountVar = "borrowBookCount"
           defaultBooks = 3
-     } 
-     value = checkNull(localStorage.getItem(bookCountVar),defaultBooks);
+     } else if (borrow == 2) {
+          bookCountVar = "lendBookCount"
+          defaultBooks = 2
+     }
+     var value = checkNull(localStorage.getItem(bookCountVar),defaultBooks);
      changeBackground(value)
      localStorage.setItem(bookCountVar,value);
 }
