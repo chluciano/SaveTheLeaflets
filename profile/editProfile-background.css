@@ -31,3 +31,52 @@ body {
     margin: 0px;
     float: left;
 }
+
+.editProfileInfo{
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 315px;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 300px;
+    padding: 0px;
+    margin-top: 8%;
+    margin-left: 2.5px !important;
+    z-index: 1;
+}
+
+.class-list{
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url("../images/WoodLight.png");
+}
+
+.class-entry{
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url("../images/WoodLight.png");
+}
+
+
+.text-title{
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 300px;
+    background-image: url("../images/WoodLight.png");
+}
+
+.left-label{
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 243px;
+    float: left;
+        background-image: url("../images/WoodLight.png");
+}
+
+.right-label{
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 40px;
+    height: 32px;
+    float: right;
+    background-image: url("../images/WoodLight.png");
+}

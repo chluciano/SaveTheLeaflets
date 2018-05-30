@@ -7,6 +7,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab">
    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </header>
    <body>
       <div id="screen"> 
@@ -21,13 +22,78 @@
                </div>
             </div>
          </div>
+         <div class="editProfileInfo">
+            <div class="button-container">
+                  <div class="form-group">
+                     <label class="text-title" for="inputAddress2">Name: </label>
+                     <input type="text" class="form-control" placeholder="John Smith">
+                  </div> 
+                  <div class="form-group">
+                     <label class="text-title" for="inputAddress2">Student Email: </label>
+                     <input type="text" class="form-control" placeholder="johnsmith@aol.com">
+                  </div>
+                  <div class="form-group">
+                     <label class="text-title" for="inputAddress2">Password: </label>
+                     <input type="text" class="form-control" placeholder="*********">
+                  </div>
+                  <div class="form-group">
+                     <label class="text-title" for="inputAddress2">Location: </label>
+                     <select id="inputState" class="form-control">
+                        <option selected>(Choose an option)</option>
+                        <option>Off Campus North</option>
+                        <option>North Campus</option>
+                        <option>South Campus</option>
+                        <option>Off Campus South</option>
+                     </select>
+                  </div>
+                  <div class="form-group">
+                     <label class="text-title" for="inputAddress2">Add Class: </label>
+                     <input type="text" class="form-control" placeholder="History 250-1">
+                  </div>
+                  <div class="class-list">
+                     <div class="class-entry">
+                        <label> Class:<br></label>
+                     </div>
+                     <div class="class-entry">
+                        <div class="left-label">
+                           <label> &nbsp; &nbsp;Chemistry 101<br></label>
+                        </div>
+                        <div class="right-label">
+                           <i class="material-icons" style="font-size:15px">remove_circle</i>
+                        </div>
+                     </div>
+                     <div class="class-entry">
+                        <div class="left-label">
+                           <label> &nbsp; &nbsp;History 250-1<br></label>
+                        </div>
+                        <div class="right-label">
+                           <i class="material-icons" style="font-size:15px">remove_circle</i>
+                        </div>
+                     </div>
+                     <div class="class-entry">
+                        <div class="left-label">
+                           <label> &nbsp; &nbsp;EECS 330<br></label>
+                        </div>
+                        <div class="right-label">
+                           <i class="material-icons" style="font-size:15px">remove_circle</i>
+                        </div>
+                     </div>
+                  </div>     
+                  <a href="../schedule/schedule.html" onclick="storeLink(0)" style="margin: 10px 3px" class="btn btn-primary btn-lg" role="button">
+                     Lending <br> Schedule
+                  </a>
+                  <a href="../schedule/schedule.html" onclick="storeLink(1)" style="margin: 10px 3px" class="btn btn-primary btn-lg" role="button">
+                     Borrowing <br> Schedule
+                  </a>
+            </div>
+         </div>
          <div class="button-container"> 
-               <a href="../schedule/schedule.html" onclick="storeLink(0)" style="margin: 10px 10px" class="btn btn-primary btn-lg" role="button">
-                  Lending <br> Schedule
-               </a>
-               <a href="../schedule/schedule.html" onclick="storeLink(1)" style="margin: 10px 10px" class="btn btn-primary btn-lg" role="button">
-                  Borrowing <br> Schedule
-               </a>
+            <a href="profileConfirm.html" onclick="storeLink()" style="margin: 10px 20px" class="btn btn-primary btn-lg" role="button">
+               Confirm
+            </a>
+            <a href="profile.html" style="margin: 10px 20px" class="btn btn-secondary btn-lg" role="button">
+               Cancel
+            </a>
          </div>
          <div class="tab-bar">
             <div class="tab-button">
