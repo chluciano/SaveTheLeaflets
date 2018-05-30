@@ -8,6 +8,7 @@ body {
     width: 100%;
     padding: 8px;
     font-family: 'Josefin Sans', sans-serif;
+    margin-top: 10px;
 }
 
 /* tried to resize the bootstrap buttons using this but did not work
@@ -40,4 +41,8 @@ body {
 
 .form-control-sm{
     width: 100%;
+}
+
+.form-label{
+    background-image: url("../images/WoodLight.png");
 }

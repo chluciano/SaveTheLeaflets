@@ -3,6 +3,14 @@ body {
     background-repeat: no-repeat;
 }
 
+div a {
+	color: black;
+}
+
+div a:hover {
+	text-decoration: none;
+}
+
 .search {
 	width: 90%;
 	margin-left: 5%;
@@ -28,5 +36,25 @@ body {
 	align-items: center;
 	display: flex;
 	text-align: center;
-	border: 1px solid red;
+
 }
+
+.findGroupEntry{
+	/*background-color: rgba(239, 241, 243, .6);*/
+
+
+
+
+
+}
+
+/* .findGroupEntry{
+
+
+	background-image: url("./images/bookResults.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 28%;
+	margin-bottom: 5px;
+
+8

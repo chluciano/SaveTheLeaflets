@@ -3,18 +3,18 @@ var dayList = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
 var avail_list = [0, 0, 0, 0, 0, 0, 0];
 
 var monList = [["1. History 255",
-				"2. History 255",
-				"3. History 301",
+                "2. History 255",
+				        "3. History 301",
                 "4. History 201"],
                ["$23",
-			   "$24",
-			   "$24",
+               "$24",
+               "$24",
                "$32"],
                ["Kofi",
                "Christian",
                "Leeks",
-               "Coffee"],
-               [1,2,3,4]
+               "Christian123"],
+               [5,5,5,5]
                ];
 			   
 var tuesList = [["1. History 255",
@@ -26,7 +26,7 @@ var tuesList = [["1. History 255",
                ["Kofi",
                "Christian",
                ],
-               [2,3,]
+               [5,5,]
                ];
 				
 var wedList = [["1. History 255",
@@ -38,7 +38,7 @@ var wedList = [["1. History 255",
                ["Kofi",
                "Kofi",
                "Kofi"],
-               [3,4,5]
+               [5,5,5]
                ];
 			   
 var thursList = [[],
@@ -60,7 +60,7 @@ var friList = [["1. History 255",
                "Leeks",
                "Santa",
                "Kira"],
-               [1,1,1,1,4]
+               [5,5,5,5,5]
                ];
 			   
 var satList = [["1. History 255",
@@ -72,7 +72,7 @@ var satList = [["1. History 255",
                ["Kofi",
                "Kofi",
                "Kofi"],
-               [3,4,2]
+               [5,5,5]
                ];
 			   
 var sunList = [["1. History 255",
@@ -84,7 +84,7 @@ var sunList = [["1. History 255",
                ["Kofi",
                "Kofi",
                "Kofi"],
-               [3,4,2]
+               [5,5,5]
                ];
 
 var day_num;

@@ -3,6 +3,16 @@ body {
     background-repeat: no-repeat;
 }
 
+div a{
+	color: black;
+}
+
+div a:hover{
+	text-decoration: none;
+	color: black;
+}
+}
+
 .search {
 	width: 90%;
 	margin-left: 5%;
@@ -164,34 +174,45 @@ body {
 
 
 .dataTable{
-	margin-left: 13%;
+	margin-left: 19%;
 	height: 100%;
-	width: 75%;
+	width: 175px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	text-decoration: none;
+
+}
+
+.dataTable::hover{
+	text-decoration: none;
 }
 
 .dataTable-row{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	width: 100%;
+
 }
 
 .elf_hat{
-	height: 65%;
-	width: 10%;
+	height: 60%;
+	width: 12px;
 	margin: 0px;
 	padding: 0px;
 	fill: black;
 
+
 }
 
 .elf-hat-rankings{
+	width: 150px;
+	margin: 0px;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
-	margin: 0px;
+
 
 
 }
