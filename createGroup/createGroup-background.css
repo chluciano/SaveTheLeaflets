@@ -44,3 +44,7 @@ body {
 .form-control-sm{
 	width: 100%;
 }
+
+.label-entry{
+    background-image: url("../images/WoodLight.png");
+}
