@@ -13,30 +13,33 @@
       <div id="screen"> 
          <div class="header">
             <div class="header-container">
-               <div class="header-row-top">
-                  <p id="credits"> $420 </p>
-                  <a href="../howToUse/howToUse.html"><img src="https://image.flaticon.com/icons/svg/36/36601.svg" id="question-icon"></a>
+               <div class="header-row-left">
+                      <p id="coinsValue">420</p><img id="coins" src="../images/coins.png" alt="coins">
                </div>
-               <div class="header-row-bottom">
-                  <h1 id="title"> Profile </h1>
+               <div class="header-row-center">
+                  <h1 id="title2"> Profile</h1>
+               </div>
+               <div class="header-row-right">
+                  <a href="howToUse/howToUse.html"><img src="https://image.flaticon.com/icons/svg/36/36601.svg" id="question-icon"></a>
                </div>
             </div>
          </div>
          <a href="editProfile.html" id="profileShelf" onmouseover="highlightShelf(this)" onmouseout="unhighlightShelf(this)">
+         <h3 class="shelfLabel headerText">Profile</h3>
 			<i class="material-icons shelfContent">zoom_in</i>
-			<h3 class="shelfLabel headerText">Profile</h3>
+
 		 </a>
 		 <a href="borrowedCourseMaterials.html" id="borrowingShelf" onmouseover="highlightShelf(this)" onmouseout="unhighlightShelf(this)" onclick="sendBorrow(1)">
+         <h3 class="shelfLabel headerText">Borrowing</h3>
 			<i class="material-icons shelfContent">zoom_in</i>
-			<h3 class="shelfLabel headerText">Borrowing</h3>
 		 </a>
 		 <a href="lendingOut.html" id="lendingOutShelf" onmouseover="highlightShelf(this)" onmouseout="unhighlightShelf(this)" onclick="sendBorrow(2)">
+         <h3 class="shelfLabel headerText">Lending Out</h3>
 			<i class="material-icons shelfContent">zoom_in</i>
-			<h3 class="shelfLabel headerText">Lending Out</h3>
 		 </a>
 		 <a href="yourCourseMaterials.html" id="readyToLendShelf" onmouseover="highlightShelf(this)" onmouseout="unhighlightShelf(this)" onclick="sendBorrow(0)">
+         <h3 class="shelfLabel headerText">Ready to Lend</h3>
 			<i class="material-icons shelfContent">zoom_in</i>
-			<h3 class="shelfLabel headerText">Ready to Lend</h3>
 		 </a>
          <div class="tab-bar">
             <div class="tab-button">

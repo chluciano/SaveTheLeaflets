@@ -48,3 +48,15 @@ body {
 .label-entry{
     background-image: url("../images/WoodLight.png");
 }
+
+.label-entry-long{
+    width: 285px;
+    text-align: center;
+    background-image: url("../images/WoodLight.png");
+}
+
+.label-entry-short{
+    width: 140px;
+    text-align: center;
+    background-image: url("../images/WoodLight.png");
+}
