@@ -158,10 +158,13 @@ function updateDayHighlight() {
     for (i=0; i < 7; i++){
         if (dayCheckCount[i] > 0) {
             day[i].style.color = "#004ba0"
+            day[i].style.fontWeight = "bold"
         } else if (dayCheckCount[i] == 0){
             day[i].style.color = "#000000"
+            day[i].style.fontWeight = "lighter"
         } else if (dayCheckCount[i] == -1){
             day[i].style.color = "#b9987e"
+
         }
     }
 }

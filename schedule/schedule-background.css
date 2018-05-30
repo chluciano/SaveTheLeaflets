@@ -19,9 +19,8 @@ body {
 }
 
 .schedule-tab{
-
-    width: 10px;
-    height: 15px;
+    width: 100%;
+    height: 100%;
     padding-top: 0px;
     padding-bottom: 0px;
     color: white;
@@ -45,7 +44,7 @@ body {
 }
 
 #pm-times{
-    float: left;
+    float: right;
     text-align: center;
     align-items: center;
     width: 100px;
@@ -121,6 +120,7 @@ body {
     justify-content: center;
     text-align: center;
     background-color: rgba(99, 164, 255, .2);
+    height: 25px;
 }
 
 #leftbutton {
@@ -140,4 +140,7 @@ body {
     width: 40px;
     float: right;
     align-items: none;
+}
+.swipe-text{
+    font-size: 14px;
 }
