@@ -14,7 +14,7 @@ var monList = [["1. History 255",
                "Christian",
                "Leeks",
                "Christian123"],
-               [5,5,5,5]
+               [1,2,3,4]
                ];
 			   
 var tuesList = [["1. History 255",
@@ -26,7 +26,7 @@ var tuesList = [["1. History 255",
                ["Kofi",
                "Christian",
                ],
-               [5,5,]
+               [4,5,]
                ];
 				
 var wedList = [["1. History 255",
@@ -38,7 +38,7 @@ var wedList = [["1. History 255",
                ["Kofi",
                "Kofi",
                "Kofi"],
-               [5,5,5]
+               [2,3,4]
                ];
 			   
 var thursList = [[],
@@ -60,7 +60,7 @@ var friList = [["1. History 255",
                "Leeks",
                "Santa",
                "Kira"],
-               [5,5,5,5,5]
+               [2,2,1,4,5]
                ];
 			   
 var satList = [["1. History 255",
@@ -72,7 +72,7 @@ var satList = [["1. History 255",
                ["Kofi",
                "Kofi",
                "Kofi"],
-               [5,5,5]
+               [3,1,2]
                ];
 			   
 var sunList = [["1. History 255",
@@ -84,7 +84,7 @@ var sunList = [["1. History 255",
                ["Kofi",
                "Kofi",
                "Kofi"],
-               [5,5,5]
+               [1,3,4]
                ];
 
 var day_num;
@@ -215,9 +215,15 @@ function addMonday() {
 
         for (j = 0; j<monList[3][i]; j++){
             var elfHat = document.createElement("img");
-            elfHat.setAttribute('src', '../images/elf_hat.svg');
+            elfHat.setAttribute('src', '../images/elf_hat_color.svg');
             elfHat.className = "elf_hat"
             elfHatRankings.appendChild(elfHat);
+        }
+        for (k = 0; k<(5-monList[3][i]); k++){
+            var elfHatOutline = document.createElement("img");
+            elfHatOutline.setAttribute('src', '../images/elf_hat.svg');
+            elfHatOutline.className = "elf_hat"
+            elfHatRankings.appendChild(elfHatOutline);
         }
 
         courseEntries.appendChild(top);
@@ -300,9 +306,15 @@ function addTuesday() {
 
         for (j = 0; j<tuesList[3][i]; j++){
             var elfHat = document.createElement("img");
-            elfHat.setAttribute('src', '../images/elf_hat.svg');
+            elfHat.setAttribute('src', '../images/elf_hat_color.svg');
             elfHat.className = "elf_hat"
             elfHatRankings.appendChild(elfHat);
+        }
+        for (k = 0; k<(5-tuesList[3][i]); k++){
+            var elfHatOutline = document.createElement("img");
+            elfHatOutline.setAttribute('src', '../images/elf_hat.svg');
+            elfHatOutline.className = "elf_hat"
+            elfHatRankings.appendChild(elfHatOutline);
         }
 
         courseEntries.appendChild(top);
@@ -389,9 +401,15 @@ function addWednesday() {
 
         for (j = 0; j<wedList[3][i]; j++){
             var elfHat = document.createElement("img");
-            elfHat.setAttribute('src', '../images/elf_hat.svg');
+            elfHat.setAttribute('src', '../images/elf_hat_color.svg');
             elfHat.className = "elf_hat"
             elfHatRankings.appendChild(elfHat);
+        }
+        for (k = 0; k<(5-wedList[3][i]); k++){
+            var elfHatOutline = document.createElement("img");
+            elfHatOutline.setAttribute('src', '../images/elf_hat.svg');
+            elfHatOutline.className = "elf_hat"
+            elfHatRankings.appendChild(elfHatOutline);
         }
 
         courseEntries.appendChild(top);
@@ -479,9 +497,15 @@ function addThursday() {
 
         for (j = 0; j<thursList[3][i]; j++){
             var elfHat = document.createElement("img");
-            elfHat.setAttribute('src', '../images/elf_hat.svg');
+            elfHat.setAttribute('src', '../images/elf_hat_color.svg');
             elfHat.className = "elf_hat"
             elfHatRankings.appendChild(elfHat);
+        }
+        for (k = 0; k<(5-thursList[3][i]); k++){
+            var elfHatOutline = document.createElement("img");
+            elfHatOutline.setAttribute('src', '../images/elf_hat.svg');
+            elfHatOutline.className = "elf_hat"
+            elfHatRankings.appendChild(elfHatOutline);
         }
 
         courseEntries.appendChild(top);
@@ -572,9 +596,15 @@ function addFriday() {
 
         for (j = 0; j<friList[3][i]; j++){
             var elfHat = document.createElement("img");
-            elfHat.setAttribute('src', '../images/elf_hat.svg');
+            elfHat.setAttribute('src', '../images/elf_hat_color.svg');
             elfHat.className = "elf_hat"
             elfHatRankings.appendChild(elfHat);
+        }
+        for (k = 0; k<(5-friList[3][i]); k++){
+            var elfHatOutline = document.createElement("img");
+            elfHatOutline.setAttribute('src', '../images/elf_hat.svg');
+            elfHatOutline.className = "elf_hat"
+            elfHatRankings.appendChild(elfHatOutline);
         }
 
         courseEntries.appendChild(top);
@@ -665,9 +695,15 @@ function addSaturday() {
 
         for (j = 0; j<satList[3][i]; j++){
             var elfHat = document.createElement("img");
-            elfHat.setAttribute('src', '../images/elf_hat.svg');
+            elfHat.setAttribute('src', '../images/elf_hat_color.svg');
             elfHat.className = "elf_hat"
             elfHatRankings.appendChild(elfHat);
+        }
+        for (k = 0; k<(5-satList[3][i]); k++){
+            var elfHatOutline = document.createElement("img");
+            elfHatOutline.setAttribute('src', '../images/elf_hat.svg');
+            elfHatOutline.className = "elf_hat"
+            elfHatRankings.appendChild(elfHatOutline);
         }
 
         courseEntries.appendChild(top);
@@ -754,9 +790,16 @@ function addSunday() {
 
         for (j = 0; j<sunList[3][i]; j++){
             var elfHat = document.createElement("img");
-            elfHat.setAttribute('src', '../images/elf_hat.svg');
+            elfHat.setAttribute('src', '../images/elf_hat_color.svg');
             elfHat.className = "elf_hat"
             elfHatRankings.appendChild(elfHat);
+        }
+
+        for (k = 0; k<(5-sunList[3][i]); k++){
+            var elfHatOutline = document.createElement("img");
+            elfHatOutline.setAttribute('src', '../images/elf_hat.svg');
+            elfHatOutline.className = "elf_hat"
+            elfHatRankings.appendChild(elfHatOutline);
         }
 
         courseEntries.appendChild(top);
