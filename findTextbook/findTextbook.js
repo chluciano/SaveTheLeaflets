@@ -107,26 +107,46 @@ function init() {
 
 function rightDay() {
     var dayOfWeek = document.getElementById("dayOfWeek");
+    var dayOfWeekScreen = document.getElementById("dayOfWeek-background");
+
     if (day_num == 6) {
         day_num = 0;
     } else {
         day_num = day_num + 1;
     }
     dayOfWeek.innerHTML = dayList[day_num];
+    changeColorDiff(dayOfWeekScreen);
+    changeColorOrig(dayOfWeekScreen);
 
     refreshDay()
 }
 
 function leftDay() {
     var dayOfWeek = document.getElementById("dayOfWeek");
+    var dayOfWeekScreen = document.getElementById("dayOfWeek-background");
     if (day_num == 0) {
         day_num = 6;
     } else {
         day_num = day_num - 1;
     }
     dayOfWeek.innerHTML = dayList[day_num];
+    changeColorDiff(dayOfWeekScreen);
+    changeColorOrig(dayOfWeekScreen);
     
     refreshDay()
+}
+
+function changeColorDiff(el){
+  el.style.backgroundColor = "#004ba0"
+  el.style.color = "#fff"
+}
+
+function changeColorOrig(el){
+  setTimeout(function(){
+  el.style.backgroundColor = "#fff"
+  el.style.color = "#000"
+
+  }, 250);
 }
 
 function refreshDay() {

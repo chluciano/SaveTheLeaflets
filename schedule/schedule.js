@@ -157,11 +157,14 @@ function updateDayHighlight() {
     var day = document.getElementsByClassName("day")
     for (i=0; i < 7; i++){
         if (dayCheckCount[i] > 0) {
-            day[i].style.color = "#004ba0"
+            day[i].style.color = "#fff"
             day[i].style.fontWeight = "bold"
+            day[i].style.backgroundColor = "#004ba0"
+
         } else if (dayCheckCount[i] == 0){
             day[i].style.color = "#000000"
             day[i].style.fontWeight = "lighter"
+            day[i].style.backgroundColor = "#b9987e"
         } else if (dayCheckCount[i] == -1){
             day[i].style.color = "#b9987e"
 

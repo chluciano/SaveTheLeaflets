@@ -116,7 +116,7 @@ html{
 	font-family: 'Josefin Sans', sans-serif;
 	text-align: center;
 	line-height: 1.0;
-	font-size: 23pt;
+	font-size: 20pt;
 	padding-top: 10px;
 }
 
@@ -124,7 +124,7 @@ html{
 	font-family: 'Josefin Sans', sans-serif;
 	text-align: center;
 	line-height: 1.0;
-	font-size: 23pt;
+	font-size: 20pt;
 }
 
 .credits{
@@ -156,7 +156,7 @@ html{
 .header-row-bottom{ /* keeps title separate from top row containg home, help and credits */
 	height: 67%;
 	width: 100%;
-	font-size: 18pt;
+	font-size: 16pt;
 	text-align: center;
 	font-family: 'Josefin Sans', sans-serif, !important;
 }
@@ -178,6 +178,9 @@ html{
 	float: left;
 	margin: 0px;
 	padding-top: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .header-row-right{
@@ -244,3 +247,6 @@ html{
 	font-size: 12pt;
 }
 
+#title2{
+	text-shadow: 2px 1px #000;
+}

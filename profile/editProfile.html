@@ -27,19 +27,19 @@
          <div class="editProfileInfo">
             <div class="button-container">
                   <div class="form-group">
-                     <label class="text-title" for="inputAddress2">Name: </label>
+                     <label class="text-title" for="inputAddress2"><b>Name:</b> </label>
                      <input type="text" class="form-control" placeholder="John Smith">
                   </div> 
                   <div class="form-group">
-                     <label class="text-title" for="inputAddress2">Student Email: </label>
+                     <label class="text-title" for="inputAddress2"><b>Student Email:</b> </label>
                      <input type="text" class="form-control" placeholder="johnsmith@aol.com">
                   </div>
                   <div class="form-group">
-                     <label class="text-title" for="inputAddress2">Password: </label>
+                     <label class="text-title" for="inputAddress2"><b>Password:</b> </label>
                      <input type="text" class="form-control" placeholder="*********">
                   </div>
                   <div class="form-group">
-                     <label class="text-title" for="inputAddress2">Location: </label>
+                     <label class="text-title" for="inputAddress2"><b>Location:</b> </label>
                      <select id="inputState" class="form-control">
                         <option selected>(Choose an option)</option>
                         <option>Off Campus North</option>
@@ -49,12 +49,12 @@
                      </select>
                   </div>
                   <div class="form-group">
-                     <label class="text-title" for="inputAddress2">Add Class: </label>
+                     <label class="text-title" for="inputAddress2"><b>Add Class:</b> </label>
                      <input type="text" class="form-control" placeholder="History 250-1">
                   </div>
                   <div class="class-list">
-                     <div class="class-entry">
-                        <label> Class:<br></label>
+                     <div class="class-label">
+                        <label> <b>Class:</b><br></label>
                      </div>
                      <div class="class-entry">
                         <div class="left-label">
@@ -81,19 +81,24 @@
                         </div>
                      </div>
                   </div>     
-                  <a href="../schedule/schedule.html" onclick="storeLink(0)" style="margin: 10px 3px" class="btn btn-secondary btn-lg" role="button">
-                     Lending <br> Schedule
-                  </a>
-                  <a href="../schedule/schedule.html" onclick="storeLink(1)" style="margin: 10px 3px" class="btn btn-secondary btn-lg" role="button">
-                     Borrowing <br> Schedule
-                  </a>
+                  <div class="button-container-submit">
+                     <div class="row">
+                     
+                        <a href="../schedule/schedule.html" onclick="storeLink(0)" class="btn btn-secondary btn-md col-5" role="button" id="left-btn">
+                           Lending <br> Schedule
+                        </a>
+                        <a href="../schedule/schedule.html" onclick="storeLink(1)" class="btn btn-secondary btn-md col-5" role="button" id="right-btn">
+                           Borrowing <br> Schedule
+                        </a>
+                  </div>
+               </div>
             </div>
          </div>
          <div class="button-container"> 
             <a href="profileConfirm.html" onclick="storeLink()" style="margin: 10px 20px" class="btn btn-secondary btn-lg" role="button">
                Confirm
             </a>
-            <a href="profile.html" style="margin: 10px 20px" class="btn btn-primary btn-lg" role="button">
+            <a href="profile.html" style="margin: 10px 20px" class="btn btn-secondary btn-lg" role="button">
                Cancel
             </a>
          </div>

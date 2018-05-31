@@ -47,13 +47,23 @@ body {
 .class-list{
     text-align: left;
     font-family: 'Josefin Sans', sans-serif;
+
+}
+.class-label{
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
     background-image: url("../images/WoodLight.png");
+    height: 25px;
 }
 
 .class-entry{
     text-align: left;
     font-family: 'Josefin Sans', sans-serif;
     background-image: url("../images/WoodLight.png");
+    width: 95%;
+    margin-left: 2.5%;
+    height: 15%;
+    margin-top: 15px;
 }
 
 
@@ -69,7 +79,9 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     width: 243px;
     float: left;
-        background-image: url("../images/WoodLight.png");
+    background-image: url("../images/WoodLight.png");
+    font-size: 20px;
+    margin-top: 5px;
 }
 
 .right-label{
@@ -79,4 +91,19 @@ body {
     height: 32px;
     float: left;
     background-image: url("../images/WoodLight.png");
+    margin-top: 10px;
+}
+
+.button-container-submit{
+
+}
+
+#left-btn{
+    margin-right: 10px;
+    margin-left: 22.5px;
+}
+
+#right-btn{
+
+
 }
