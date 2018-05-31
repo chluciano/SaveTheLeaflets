@@ -1,12 +1,14 @@
 <html>
 <header>
 	<title>createGroup</title>
+   <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../index.css"/>
 	<link rel="stylesheet" type="text/css" href="createGroup-background.css"/>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+   <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"-->
+   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </header>
 	<body>
 		<div id="screen">
@@ -22,17 +24,17 @@
 * 
 -->
 			<div class="header">
-					<div class="header-row-top">
-		               <div class="left">
-		                  <p id="credits"> $420 </p>
+            	<div class="header-container">
+               		<div class="header-row-left">
+				          <p id="coinsValue">420</p><img id="coins" src="../images/coins.png" alt="coins">
+               		</div>
+		              <div class="header-row-center">
+		                  <h1 id="title2">Create <br>Co-Buy Group</h1>
 		               </div>
-		               <div class="right">
-		                  <a href="../howToUse/howToUse.html"><img src="https://image.flaticon.com/icons/svg/36/36601.svg" id="question-icon"></a>
-		               </div>
-					</div>
-					<div class="header-row-bottom">
-						<h1 id="title">Create <br>Co-Buy Group</h1>
-					</div>
+			         <div class="header-row-right">
+				          <a href="howToUse/howToUse.html"><img src="https://image.flaticon.com/icons/svg/36/36601.svg" id="question-icon"></a>
+			         </div>
+				</div>
 				<!--/div-->
 			</div>
 <!--
@@ -45,25 +47,25 @@
 			<div class="form-container">
 				<form>
 					<div class="form-group">
-						<label class="label-entry" for="inputAddress2">Name of Course Material</label>
+						<label class="label-entry-long" for="inputAddress2">Name of Course Material</label>
 						<input type="text" class="form-control" placeholder="History 250-1 Course Packet">
 					</div>
 				</form>
 				<form class="form-inline"> 
 					<div class="form-row">
 						<div class="form-group col-6">
-							<label class="label-entry" for="inputEmail4">Subject</label>
+							<label class="label-entry-short" for="inputEmail4">Subject</label>
 							<input type="text" class="form-control-sm" placeholder="History">
 						</div>
 						<div class="form-group col-6">
-							<label class="label-entry" for="inputPassword4">Class Number</label>
+							<label class="label-entry-short" for="inputPassword4">Class Number</label>
 							<input type="text" class="form-control-sm pr-0" placeholder="250-1">
 						</div>
 					</div>
 				</form>
 
 					<div class="form-group">
-						<label class="label-entry" for="inputState">Do you want to own this course material?</label>
+						<label class="label-entry-long" for="inputState">Do you want to own this course material?</label>
 						<select id="inputState" class="form-control">
 							<option selected>(Choose an option)</option>
 							<option>Yes</option>
@@ -108,10 +110,10 @@
 * 
 -->
 			<div class="button-container"> 
-				<a href="groupCreated.html" style="margin: 10px 20px" class="btn btn-primary btn-lg" role="button">
+				<a href="groupCreated.html" style="margin: 10px 20px" class="btn btn-secondary btn-lg" role="button">
 					Confirm
 				</a>
-				<a href="findGroup.html" style="margin: 10px 20px" class="btn btn-secondary btn-lg" role="button">
+				<a href="findGroup.html" style="margin: 10px 20px" class="btn btn-primary btn-lg" role="button">
 					Cancel
 				</a>
 			</div>
