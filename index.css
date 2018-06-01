@@ -120,7 +120,7 @@ html{
 	padding-top: 10px;
 }
 
-#title2{
+#title2{ /* for titles with 2 lines */
 	font-family: 'Josefin Sans', sans-serif;
 	text-align: center;
 	line-height: 1.0;
@@ -159,6 +159,7 @@ html{
 	font-size: 16pt;
 	text-align: center;
 	font-family: 'Josefin Sans', sans-serif, !important;
+	text-shadow: 2px 1px #000;
 }
 
 
@@ -245,8 +246,4 @@ html{
 .button-text.active{ /* used to lower the text to fit the 'open drawer' graphic in active tabs */
 	padding: 35px 2px 2px 2px;
 	font-size: 12pt;
-}
-
-#title2{
-	text-shadow: 2px 1px #000;
 }
