@@ -11,6 +11,9 @@ div a:hover{
 	text-decoration: none;
 	color: black;
 }
+
+::-webkit-scrollbar { 
+    display: none; 
 }
 
 .search {
