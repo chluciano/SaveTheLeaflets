@@ -2,3 +2,7 @@ body {
     background-image: url("../images/SharingGroup.jpg");
     background-repeat: no-repeat;
 }
+
+.search {
+	padding: 0px 10px;
+}
