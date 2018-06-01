@@ -11,6 +11,10 @@ div a:hover {
 	text-decoration: none;
 }
 
+::-webkit-scrollbar { 
+    display: none; 
+}
+
 .search {
 	width: 90%;
 	margin-left: 5%;
