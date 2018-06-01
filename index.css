@@ -207,6 +207,11 @@ html{
 	padding-left: 5px;
 }
 
+.iconLinks { /* for home or question marks */
+	color: black;
+	text-decoration: none;
+}
+
 /*
 *
 *
