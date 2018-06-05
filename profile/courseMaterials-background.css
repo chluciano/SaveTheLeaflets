@@ -46,3 +46,14 @@ body {
 .edit-schedule{
     color: white;
 }
+
+.book-info-class{
+    background-color: white;
+}
+
+.book-info-class{
+    background-color: white;
+    font-size: 12px;
+    font-align: center;
+    width: 70px;
+}
