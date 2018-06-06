@@ -35,7 +35,7 @@ function init() {
         str_info = str_info + "Su ";
     }
 
-    document.getElementById("info").innerHTML = "Cost: 5<br>Rating: 3.8<br>Days Free: " + str_info       
+    document.getElementById("info").innerHTML = "<img id="coins" src="../images/coins.png" alt="coins">Cost: 5<br>Rating: 3.8<br>Days Free: " + str_info       
 };
 
 function storeLink() {

@@ -14,3 +14,9 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     background-image: url("../images/WoodLight.png");
 }
+
+#coins-inline{
+	margin-right: 5px;
+	width: 24px;
+	height: 20px;
+}
