@@ -247,9 +247,11 @@ html{
 	padding: 30px 2px 2px 2px;
 	line-height: 0.8;
 	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
 }
 
 .button-text.active{ /* used to lower the text to fit the 'open drawer' graphic in active tabs */
 	padding: 35px 2px 2px 2px;
 	font-size: 12pt;
+	text-align: center;
 }
