@@ -51,14 +51,26 @@ body {
     background-color: white;
     font-size: 12px;
     text-align: center;
-    width: 70px;
+    width: 73px;
+    padding-top: 6px;
+    padding-bottom: 0px;
 }
 
 .book-info-class{
     background-color: white;
     font-size: 12px;
     text-align: center;
-    width: 70px;
+    width: 73px;
+    padding-top: 6px;
+    padding-bottom: 0px;
+}
+
+
+.book-info-space1{
+
+    width: 73px;
+    padding-top: 6px;
+    height: 20px;     
 }
 
 /*.book-info-text{
