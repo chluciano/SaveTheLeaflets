@@ -2504,14 +2504,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #aaaaaa;
+  border-color: #aaaaaa;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  background-color: #aaaaaa;
+  border-color: #aaaaaa;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -2540,7 +2540,6 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #004ba0;
   border-color: #004ba0;
-  border: 2px;
 }
 
 .btn-secondary:hover {
