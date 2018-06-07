@@ -47,13 +47,23 @@ body {
     color: white;
 }
 
-.book-info-class{
+.book-info-status{
     background-color: white;
+    font-size: 12px;
+    text-align: center;
+    width: 70px;
 }
 
 .book-info-class{
     background-color: white;
     font-size: 12px;
-    font-align: center;
+    text-align: center;
     width: 70px;
 }
+
+/*.book-info-text{
+    background-color: white;
+    font-size: 12px;
+    text-align: center;
+    width: 70px;
+}*/
