@@ -2,12 +2,12 @@
 <header>
    <title>freeAgents</title>
    <link rel="stylesheet" type="text/css" href="../index.css"/>
-   <link rel="stylesheet" type="text/css" href="freeAgents-background.css"/>
       <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab">
    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="freeAgents-background.css"/>
 </header>
    <body>
       <div id="screen"> 
@@ -38,56 +38,41 @@
          </div>
 
          <div class="free-agent-header">
-            <label class="course-name-list"> History 250-1: Course Packet</label>
-            <label class="course-name-confirm"> Group Members: 2</label>
+            <label class="course-name-list"> History 250-1 Course Packet</label>
+            <label class="course-name-confirm"> Current Members: 2</label>
          </div>
-         <div>
-            <div class="form-group form-check">
+         <div class="fa-board form-group form-check">
                <ol class="free-agent-list">
-                  <li class="free-agent-item" id="exampleCheck1">
-                     <div class="free-agent" onclick="checkBox(this)">
+                  <li class="free-agent-item" onclick="checkBox(this)">
                         <div class="left-agent" onclick="checkBoxFix(this)">
                            <input type="checkbox" class="form-check-input">
                         </div>
-                        <div class="right-agent">                    
+                                           
                            <label class="fa-name-location">Alex Anders | South Campus | </label>
                            <label class="fa-want-own"> Want to Own? Maybe </label> 
                            <div class="fa-not-using">
                               <label>Not Using: </label>
-                              <!--label class="day" id="mon">M</label-->
                               <label class="day" id="tues">Tu</label>
                               <label class="day" id="wed">W</label>
-                              <!--label class="day" id="thur">Th</label-->
                               <label class="day" id="fri">F</label>
                               <label class="day" id="sat">Sa</label>
-                              <!--label class="day" id="sun">Su</label-->
                            </div>
-                        </div>   
-                     </div>
                   </li>
-                  <li class="free-agent-item" id="exampleCheck2">                    
-                     <div class="free-agent" onclick="checkBox(this)">
+                  <li class="free-agent-item" onclick="checkBox(this)">
                      <div class="left-agent" onclick="checkBoxFix(this)">
                         <input type="checkbox" class="form-check-input" >
-                     </div>
-                     <div class="right-agent">                    
+                     </div>                
                         <label class="fa-name-location">Stephen Steven | North Campus | </label>
                         <label class="fa-want-own"> Want to Own? Yes </label> 
                         <div class="fa-not-using">
                            <label>Not Using: </label>
                            <label class="day" id="mon">M</label>
                            <label class="day" id="tues">Tu</label>
-                           <!--label class="day" id="wed">W</label-->
-                           <!--label class="day" id="thur">Th</label-->
                            <label class="day" id="fri">F</label>
                            <label class="day" id="sat">Sa</label>
-                           <!--label class="day" id="sun">Su</label-->
                         </div>
-                     </div>
-                     </div>
                   </li>
                </ol>
-            </div>
          </div>  
  <!--
 *

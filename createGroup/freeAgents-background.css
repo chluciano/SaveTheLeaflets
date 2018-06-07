@@ -12,29 +12,18 @@ body {
 	overflow: hidden;
 	overflow-y: scroll;
 	font-family: 'Josefin Sans', sans-serif;
-	height: 42%;
+	height: 100%;
 }
 
 .free-agent-item{
-	padding-left: 2px;
-	width: 300px;
-	height: 90px;
+	width: 250px;
+	height: 70px;
 	justify-content: left;
-	align-items: left;
 	text-align: left;
-		margin-top: 0px;
-		float: left;
+	margin-top: 0px;
+	float: left;
 	margin-bottom: 0px;
-
-}
-
-.free-agent{
-	padding-left: 2px;
-	width: 280px;
-	background-color: rgba(191, 191, 191, .2);
-	justify-content: left;
-
-	text-align: left;
+	line-height: 1.1 !important;
 }
 
 .left-agent {
@@ -44,11 +33,9 @@ body {
 }
 
 .right-agent {
-	width:270px;
+	width:200px;
 	float: right;
 	font-family: 'Josefin Sans', sans-serif;
-	/*background-color: rgba(99, 164, 255, .2);
-	background-color: rgba(191, 191, 191, .2);*/
 	background-image: url("../images/WoodLight.png");
 }
 
@@ -57,18 +44,31 @@ body {
 	height: 20px;
 	margin-right: 10px;
 	background: rgba(99, 164, 255, .2);
+	float: left;
+}
 
+::-webkit-scrollbar { 
+    display: none; 
 }
 
 .free-agent-header{
 	padding-top: 6px;
 	padding-left: 5px;
-	/*background-color: rgba(99, 164, 255, .2);*/
+	margin: 20px 10px 0px 10px;
 	font-family: 'Josefin Sans', sans-serif;
-	width: 300px;
+	width: 280px;
 	background-image: url("../images/WoodLight.png");
+	border-radius: 5px;
+	border: 2px outset #fffcdd;
 }
 
+.fa-board{ /* to create 'notice board'*/
+	background-image: url("../images/WoodMedium.png");
+	border-radius: 5px;
+	border: 2px outset #ecc9ab;
+	margin: 0px 10px;
+	height: 220px;
+}
 
 .share-confirmation{
 	padding-top: 6px;
@@ -111,4 +111,8 @@ body {
 	padding-top: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
+}
+
+#createNewGroup{
+	margin: 0px 90px;
 }
