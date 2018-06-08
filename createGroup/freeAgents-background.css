@@ -25,9 +25,9 @@ body {
 	float: left;
 	padding: 10px 0px 0px 0px;
 	line-height: 1.4 !important;
-	background-image: url("../images/Pinned.jpg");
+	background-image: url("../images/Pinned.png");
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: left center;
 	background-size: 250px 70px;
 }
 
@@ -74,7 +74,7 @@ body {
 	border: 2px outset #ecc9ab;
 	margin: 0px 10px;
 	height: 220px;
-	padding-left: 10px !important;
+	padding-left: 20px !important;
 }
 
 #boardText {
@@ -130,5 +130,5 @@ body {
 }
 */
 #createNewGroup{
-	margin: 0px 90px;
+	margin: 0px 68px;
 }
