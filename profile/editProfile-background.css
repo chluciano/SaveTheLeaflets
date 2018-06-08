@@ -20,7 +20,7 @@ body {
         justify-content: center;
 
     height: 70px;
-    font-family: 'Josefin Sans', sans-serif, !important;
+
     padding-bottom: 0px;
 }
 
@@ -33,32 +33,30 @@ body {
 }
 
 .editProfileInfo{
-    overflow: hidden;
-    overflow-y: scroll;
-    height: 315px;
-    font-family: 'Josefin Sans', sans-serif;
+    /*overflow: hidden;
+    overflow-y: scroll;*/
+    height: 290px;
     width: 300px;
-    padding: 0px;
-    margin-top: 8%;
+    /*margin-top: 8%;
     margin-left: 2.5px !important;
-    z-index: 1;
+    z-index: 1;*/
 }
 
 .class-list{
     text-align: left;
-    font-family: 'Josefin Sans', sans-serif;
+
 
 }
 .class-label{
     text-align: left;
-    font-family: 'Josefin Sans', sans-serif;
+
     background-image: url("../images/WoodLight.png");
     height: 25px;
 }
 
 .class-entry{
     text-align: left;
-    font-family: 'Josefin Sans', sans-serif;
+
     background-image: url("../images/WoodLight.png");
     width: 95%;
     margin-left: 2.5%;
@@ -69,14 +67,17 @@ body {
 
 .text-title{
     text-align: left;
-    font-family: 'Josefin Sans', sans-serif;
+
     width: 300px;
     background-image: url("../images/WoodLight.png");
+        border-radius: 4px;
+        height: 40px;
+    border: 2px outset #fffcdd
 }
 
 .left-label{
     text-align: left;
-    font-family: 'Josefin Sans', sans-serif;
+
     width: 243px;
     float: left;
     background-image: url("../images/WoodLight.png");
@@ -86,7 +87,7 @@ body {
 
 .right-label{
     text-align: left;
-    font-family: 'Josefin Sans', sans-serif;
+
     width: 40px;
     height: 32px;
     float: left;
@@ -109,16 +110,20 @@ body {
 }
 
 .entry-group{
+    padding-top: 5px;
     width: 300px;
+    height: 60px;
+    padding-bottom: 5px;
 }
 
 .left-title{
     float: left;
-    padding-right: 6px;
+    padding-right: 12px;
+    padding-bottom: 0px;
 }
 
 .right-input{
-    float: left;
+    padding-top: 2px;
 }
 
 
