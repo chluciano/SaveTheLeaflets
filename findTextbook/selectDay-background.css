@@ -59,19 +59,17 @@ body {
 
 .middle-results{
     width: 300px;
-    height: 350px;
+    height: 375px;
     padding: 0px;
     margin: 0px;
     /*float: left;*/
-    align-items: center;
-    text-align: center;
+
 }
 
 .schedule-header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     height: 70px;
     font-family: 'Josefin Sans', sans-serif, !important;
     padding-bottom: 0px;
@@ -87,13 +85,23 @@ body {
 .middle-results-row{
     width: 300px;
     margin-left: 0px !important;
+    height: 95%;
+    margin-top: 3%;
+
+    
 }   
 
 .center-button{
-    margin-top: 25px !important;
-    width: 125px;
-    height: 50px;
+    width: 250px;
+    height: 47px;
     font-size: 20px !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center{
     display: flex !important;
     flex-direction: column;
     justify-content: center;
