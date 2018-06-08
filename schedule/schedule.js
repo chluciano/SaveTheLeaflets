@@ -268,6 +268,7 @@ function setMon() {
        
         updateColor()
     }
+    moveDayArrow(day_num);
 }
 
 function setTues() {
@@ -278,6 +279,7 @@ function setTues() {
        
         updateColor()
     }
+    moveDayArrow(day_num);
 }
 
 function setWed() {
@@ -288,6 +290,7 @@ function setWed() {
    
     updateColor()
     }
+    moveDayArrow(day_num);
 }
 
 function setThurs() {
@@ -298,6 +301,7 @@ function setThurs() {
    
     updateColor()
     }
+    moveDayArrow(day_num);
 }
 
 
@@ -309,6 +313,7 @@ function setFri() {
    
     updateColor()
     }
+    moveDayArrow(day_num);
 }
 
 function setSat() {
@@ -319,6 +324,7 @@ function setSat() {
    
     updateColor()
     }
+    moveDayArrow(day_num);
 }
 
 function setSun() {
@@ -329,6 +335,7 @@ function setSun() {
    
     updateColor()
     }
+    moveDayArrow(day_num);
 }
 
 init();
