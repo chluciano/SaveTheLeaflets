@@ -51,7 +51,7 @@ function init() {
         book_info_button.setAttribute('onclick',"storeLink()");
         book_info_button.setAttribute('style',"width: 75px;text-align: center;font-size: 16px");
         book_info_button.setAttribute('role',"button");
-        book_info_button.innerHTML = "Edit <br>Times"
+        book_info_button.innerHTML = "edit <br>times"
         book.appendChild(book_info_button)
 
         bookList.appendChild(book)
