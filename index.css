@@ -196,6 +196,7 @@ html{
 
 #coinsValue{
 	height: 18px;
+	font-size: 11pt;
 	width: 40px;
 	margin: 0px;
 	font-family: 'Quicksand', sans-serif, !important;
@@ -203,7 +204,7 @@ html{
 
 #coins{
 	width: 24px;
-	height: 20px;
+	height: 18px;
 	padding-left: 5px;
 }
 
