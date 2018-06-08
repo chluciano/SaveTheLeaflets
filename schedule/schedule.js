@@ -97,10 +97,10 @@ function init() {
 function dayArrow (dayNum){
     arrowPosition = document.getElementById("dayArrow")
     if (dayNum == 0){
-        arrowPosition.style.marginLeft = "59";
+        arrowPosition.style.marginLeft = "62";
     }
     else if (dayNum == 1){
-        arrowPosition.style.marginLeft = "86";
+        arrowPosition.style.marginLeft = "89";
     }
     else if (dayNum == 2){
         arrowPosition.style.marginLeft = "113";
