@@ -34,7 +34,7 @@ function changeBackground(book){
      } else if (book == 3) {
           body.style.backgroundImage = "url(../images/LibraryZoom3.jpg)";             
      } else {
-          body.style.backgroundImage = "url(../images/LibraryZoom4A.jpg)";          
+          body.style.backgroundImage = "url(../images/LibraryZoom3.jpg)";          
      }
 }
 
