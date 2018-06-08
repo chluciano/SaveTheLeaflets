@@ -7,7 +7,7 @@ body {
 }
 
 .form-container{
-	height: 60%;
+	height: 280px;
 	width: 100%;
 	padding: 8px;
 	font-family: 'Josefin Sans', sans-serif;
@@ -36,9 +36,10 @@ body {
 }*/
 
 .button-container{ /* for confirmation and cancel buttons */
-	height: 15%;
+	height: 70px;
 	width: 100%;
 	font-family: 'Josefin Sans', sans-serif;
+	padding-left: 10px;
 }
 
 .form-control-sm{
@@ -47,16 +48,22 @@ body {
 
 .label-entry{
     background-image: url("../images/WoodLight.png");
+	border-radius: 4px;
+	border: 2px outset #fffcdd;
 }
 
 .label-entry-long{
     width: 285px;
     text-align: center;
     background-image: url("../images/WoodLight.png");
+	border-radius: 4px;
+	border: 2px outset #fffcdd;
 }
 
 .label-entry-short{
     width: 140px;
     text-align: center;
     background-image: url("../images/WoodLight.png");
+	border-radius: 4px;
+	border: 2px outset #fffcdd;
 }

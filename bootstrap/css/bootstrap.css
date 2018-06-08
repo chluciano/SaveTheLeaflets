@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -43,7 +43,7 @@
 }
 
 html {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
