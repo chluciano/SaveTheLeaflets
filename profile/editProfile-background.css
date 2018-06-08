@@ -107,3 +107,18 @@ body {
 
 
 }
+
+.entry-group{
+    width: 300px;
+}
+
+.left-title{
+    float: left;
+    padding-right: 6px;
+}
+
+.right-input{
+    float: left;
+}
+
+

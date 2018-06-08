@@ -4,13 +4,17 @@ body {
 }
 
 .share-confirmation{
+    margin: 0px 10px;
     text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
     background-image: url("../images/WoodLight.png");
+	border-radius: 5px;
+	border: 2px outset #fffcdd;
 }
 
 .group-listing{ /* used to lower the text to fit the 'open drawer' graphic in active tabs */
     text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
     background-image: url("../images/WoodLight.png");
+	border-radius: 5px;
+	border: 2px outset #fffcdd;
+	margin: 0px 20px;
 }

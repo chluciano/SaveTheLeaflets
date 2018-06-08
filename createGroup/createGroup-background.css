@@ -10,7 +10,7 @@ body {
 	height: 280px;
 	width: 100%;
 	padding: 8px;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 }
 
 /* tried to resize the bootstrap buttons using this but did not work
@@ -38,7 +38,7 @@ body {
 .button-container{ /* for confirmation and cancel buttons */
 	height: 70px;
 	width: 100%;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	padding-left: 10px;
 }
 

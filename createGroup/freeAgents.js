@@ -23,11 +23,11 @@ function checkUpdate() {
     
     if (last_count != count) {
         if (count > 0) {
-            document.getElementById("createNewGroup").innerHTML = "Share with Checked"
+            document.getElementById("createNewGroup").innerHTML = "share with checked"
             document.getElementById("createNewGroup").setAttribute('href',"groupConfirmed.html")
             document.getElementById("createNewGroup").setAttribute('style',"margin: 0px 48px")
         } else {
-            document.getElementById("createNewGroup").innerHTML = "Join this Group"
+            document.getElementById("createNewGroup").innerHTML = "join this group"
             document.getElementById("createNewGroup").setAttribute('href',"joinConfirmed.html")
             document.getElementById("createNewGroup").setAttribute('style',"margin: 0px 68px")
         }

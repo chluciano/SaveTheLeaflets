@@ -9,7 +9,7 @@ body {
     height: 94px;
     padding: 0px;
 	text-decoration: none;
-	background-image: url("../images/noBooks.jpg"); /* change this for different number of books */
+	background-image: url("../images/ProfileShelf.jpg"); /* change this for different number of books */
 }
 
 #borrowingShelf{ /* 4 containers that include top supports and shelf, title, contains 2  */
@@ -61,3 +61,4 @@ body {
 	text-align: center;
 	letter-spacing: 2px;
 } 
+
