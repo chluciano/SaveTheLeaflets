@@ -4,7 +4,7 @@ body {
 }
 
 .form-container{
-    height: 60%;
+    height: 55%;
     width: 100%;
     padding: 8px;
     font-family: 'Josefin Sans', sans-serif;
@@ -34,7 +34,7 @@ body {
 }*/
 
 .button-container{ /* for confirmation and cancel buttons */
-    height: 15%;
+    height: 12%;
     width: 100%;
     font-family: 'Josefin Sans', sans-serif;
 }
