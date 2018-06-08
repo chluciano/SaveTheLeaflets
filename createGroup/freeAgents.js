@@ -27,9 +27,9 @@ function checkUpdate() {
             document.getElementById("createNewGroup").setAttribute('href',"groupConfirmed.html")
             document.getElementById("createNewGroup").setAttribute('style',"margin: 0px 48px")
         } else {
-            document.getElementById("createNewGroup").innerHTML = "Join Group"
+            document.getElementById("createNewGroup").innerHTML = "Join this Group"
             document.getElementById("createNewGroup").setAttribute('href',"joinConfirmed.html")
-            document.getElementById("createNewGroup").setAttribute('style',"margin: 0px 88px")
+            document.getElementById("createNewGroup").setAttribute('style',"margin: 0px 68px")
         }
     }
     last_count = count
