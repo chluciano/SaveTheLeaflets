@@ -83,6 +83,10 @@ body {
 
 }
 
+.button-container{
+    height: 12%;
+}
+
 ::-webkit-scrollbar { 
     display: none; 
 }
@@ -164,6 +168,68 @@ body {
 }
 .ampm{
     display: inline;
-    color: ;
+    margin: 0;
 
 }
+
+#dayArrow{
+    transform: rotate(180deg);
+    color: #004ba0;
+    text-decoration: none;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    margin-left: 219px;
+
+}
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  transform: rotate(180deg);
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: rotate(180deg) translateY(0);
+
+  }
+  50% {
+    transform: rotate(180deg) translateY(3px);
+
+
+  }
+}
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+}
+
+.tab-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 105px;
+
+    margin: 0px;
+}
+
+.tab-button {
+
+    text-align: center;
+    height: 100%;
+    width: 25%;
+    position: relative;
+
+}
+
+

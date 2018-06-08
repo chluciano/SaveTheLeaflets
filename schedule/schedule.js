@@ -1,6 +1,7 @@
 // Create your global variables below:
 var dayCheckCount = [0,0,0,0,0,0,0];
 var dayList = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+var dayMargins = [59, 86, 113, 140, 167, 194, 221];
 var amState = [[false,false,false,false,false,false,false,false,false,false,false,false],
                [false,false,false,false,false,false,false,false,false,false,false,false],
                [false,false,false,false,false,false,false,false,false,false,false,false],
@@ -88,9 +89,52 @@ function init() {
     link.setAttribute('href',change_link);
     updateDayHighlight()
     updateColor()
+    dayArrow(day_num);
+    slideDayArrow(day_num);
 };
 
 
+function dayArrow (dayNum){
+    arrowPosition = document.getElementById("dayArrow")
+    if (dayNum == 0){
+        arrowPosition.style.marginLeft = "59";
+    }
+    else if (dayNum == 1){
+        arrowPosition.style.marginLeft = "86";
+    }
+    else if (dayNum == 2){
+        arrowPosition.style.marginLeft = "113";
+    }
+    else if (dayNum == 3){
+        arrowPosition.style.marginLeft = "140";
+    }
+    else if (dayNum == 4){
+        arrowPosition.style.marginLeft = "167";
+    }
+    else if (dayNum == 5){
+        arrowPosition.style.marginLeft = "194";
+    }
+    else if (dayNum == 6){
+        arrowPosition.style.marginLeft = "221";
+    }
+}
+
+function slideDayArrow(dayNum){
+    arrowPosition = document.getElementById("dayArrow").style.marginLeft;
+    arrowPosition = arrowPosition.substring(0, arrowPosition.length-2);
+    
+}
+
+function moveDayArrow(dayNum){
+    arrowPosition = document.getElementById("dayArrow").style.marginLeft;
+    arrowCurrPositionNum = Number(arrowPosition.substring(0, arrowPosition.length-2));
+    arrowEndPositionNum = dayMargins[dayNum];
+    console.log(arrowCurrPositionNum)
+    if (arrowCurrPositionNum != arrowEndPositionNum){
+        document.getElementById("dayArrow").style.marginLeft = arrowEndPositionNum;
+    }
+
+}
 function checkColor(el) {
     var tab = el.getElementsByClassName("schedule-tab")[0];
     var id_name = tab.getAttribute('id');
@@ -189,7 +233,8 @@ function rightDay() {
 
     dayOfWeek.innerHTML = dayList[day_num];
 
-    updateColor()
+    updateColor();
+    moveDayArrow(day_num);
 }
 
 function leftDay() {
@@ -209,7 +254,8 @@ function leftDay() {
     }
     dayOfWeek.innerHTML = dayList[day_num];
     
-    updateColor()
+    updateColor();
+    moveDayArrow(day_num);
 }
 
 
