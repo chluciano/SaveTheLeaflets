@@ -242,14 +242,14 @@ html{
 	width: 100%;
 	z-index: -1;
 	font-size: 10pt;
-	padding: 25px 2px 2px 2px;
+	padding: 30px 2px 2px 2px;
 	line-height: 0.8;
 	font-family: 'Quicksand', sans-serif;
 	text-align: center;
 }
 
 .button-text.active{ /* used to lower the text to fit the 'open drawer' graphic in active tabs */
-	padding: 30px 2px 2px 2px;
+	padding: 35px 2px 2px 2px;
 	font-size: 12pt;
 	text-align: center;
 }
