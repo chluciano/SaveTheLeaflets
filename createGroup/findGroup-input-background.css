@@ -42,6 +42,18 @@ div a:hover {
 	font-size: 10pt;
 }
 
+.col-5{
+	padding: 10px 0px 0px 17px;
+}
+
+.col-5.long{
+	padding-top: 5px;
+}
+
+.col-6{
+	padding-top: 5px;
+}
+
 .button-container{
 	width: 300px;
 	height: 80px;
